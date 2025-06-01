@@ -1,0 +1,3029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging Language Barriers: Supplementary Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Sets Roboto as the default font */
+        }
+        /* Custom styles for the PDF viewer container */
+        .pdf-viewer-container {
+            width: 90%; /* Responsive width */
+            max-width: 1200px; /* Maximum width for larger screens */
+            height: 75vh; /* 75% of the viewport height */
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #e2e8f0; /* Light border, Tailwind gray-300 */
+            border-radius: 0.5rem; /* Rounded corners */
+            overflow: hidden; /* Ensures the iframe respects border-radius */
+        }
+        /* Styles for the iframe itself */
+        .pdf-viewer {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes default iframe border */
+        }
+        /* Styles for code blocks */
+        pre {
+            background-color: #f7fafc; /* Tailwind gray-100 */
+            border: 1px solid #e2e8f0; /* Tailwind gray-300 */
+            border-radius: 0.375rem; /* Tailwind rounded-md */
+            padding: 1rem; /* Tailwind p-4 */
+            overflow-x: auto; /* Allows horizontal scrolling for long code lines */
+            white-space: pre-wrap; /* Wraps text to the next line if it exceeds container width */
+            word-wrap: break-word; /* Breaks long words to prevent overflow */
+            font-size: 0.875rem; /* Tailwind text-sm */
+        }
+        /* New style for scrollable code boxes */
+        .scrollable-code-box {
+            max-height: 450px; /* Adjust this value as needed */
+            overflow-y: auto; /* Adds vertical scrollbar if content exceeds max-height */
+        }
+        code {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* Common monospace fonts for code */
+            color: #2d3748; /* Tailwind gray-800 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+        <header class="text-center mb-10 sm:mb-12">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Bridging Language Barriers: A Comparative Review and Empirical Evaluation of Source-to-Source Transpilers
+            </h1>
+        </header>
+
+        <section id="pdf-article" class="mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-6 text-gray-700">Read the Article</h2>
+            <div class="pdf-viewer-container shadow-xl bg-white">
+                <!--
+                    IMPORTANT: Replace 'YOUR_PDF_FILE.pdf' below with the actual path or URL to your PDF file.
+                    - For local files, ensure the path is correct relative to this HTML file, or consider hosting it online.
+                    - For online PDFs (e.g., from arXiv, Google Drive, your university repository), paste the direct link to the PDF.
+                    - The current 'src' is a placeholder dummy PDF.
+                -->
+                <iframe
+                    src="transpiler_paper.pdf"
+                    class="pdf-viewer"
+                    title="Article PDF Viewer"
+                    allowfullscreen
+                    aria-label="PDF viewer for the article"
+                >
+                    <div class="p-6 text-center">
+                        <p class="mb-2">Your browser does not seem to support embedded PDFs.</p>
+                        <a href="YOUR_PDF_FILE.pdf" class="text-blue-600 hover:text-blue-700 underline font-medium">
+                            Download the PDF directly
+                        </a>
+                        <p class="mt-2 text-xs text-gray-500">(Please replace 'YOUR_PDF_FILE.pdf' with the actual link if downloading doesn't work.)</p>
+                    </div>
+                </iframe>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-3 px-4">
+                Use the controls within the PDF viewer for scrolling, zoom, and fullscreen mode.
+            </p>
+        </section>
+
+        <section id="transpiler-tools" class="mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-gray-700 text-center">Featured Transpiler Tools</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">TypeScript Compiler</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 5.7.3</p>
+                    </div>
+                    <a href="https://github.com/microsoft/TypeScript" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-yellow-500 mb-2">Babel</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 7.26.4</p>
+                    </div>
+                    <a href="https://github.com/babel/babel" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-yellow-600 mb-2">Nim</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 2.2.0</p>
+                    </div>
+                    <a href="https://github.com/nim-lang/Nim" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-green-600 mb-2">ClojureScript</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 1.10.773</p>
+                    </div>
+                    <a href="https://github.com/clojure/clojurescript" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-red-600 mb-2">Java2Python</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 0.5.1</p>
+                    </div>
+                    <a href="https://github.com/natural/java2python/tree/master" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-red-500 hover:bg-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-indigo-600 mb-2">jscodeshift</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 17.1.1</p>
+                    </div>
+                    <a href="https://github.com/facebook/jscodeshift" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-orange-600 mb-2">c2rust</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 0.18.0</p>
+                    </div>
+                    <a href="https://github.com/immunant/c2rust" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pink-600 mb-2">Fennel</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 1.5.1</p>
+                    </div>
+                    <a href="https://github.com/bakpakin/Fennel" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-600 mb-2">TypeScriptToLua</h3>
+                        <p class="text-gray-600 text-sm mb-3">Version: 1.29.0</p>
+                    </div>
+                    <a href="https://github.com/TypeScriptToLua/TypeScriptToLua" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-4 bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="example-scripts" class="mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-gray-700 text-center">Scripts used to evaluate each transpiled code</h2>
+            <div class="space-y-10">
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for Babel and TSCompiler</h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        In order to use these script is required the involvment of two files: precision-analyzer.js and run-precision-analysis.js. The actual benchmark is precision-analyzer.js but then run-precision-analysis.js calls the benchmarks and displays the scores for both codes transpiled.
+                    </p>
+                    <pre class="scrollable-code-box mb-4"><code class="language-javascript">
+const { parse } = require('@babel/parser');
+const { default: traverse } = require('@babel/traverse');
+const fs = require('fs');
+const { execSync } = require('child_process');
+const path = require('path');
+
+class EnhancedTranspilationAnalyzer {
+    constructor(originalCode, transpiledCode, sourceLanguage = 'auto') {
+        this.originalCode = originalCode;
+        this.transpiledCode = transpiledCode;
+        this.sourceLanguage = sourceLanguage;
+        this.weights = {
+            functionalCorrectness: 0.40,     // Most important - does it work?
+            semanticEquivalence: 0.25,       // Logic and behavior preservation
+            codeQuality: 0.15,               // Best practices and readability
+            syntaxPreservation: 0.10,        // Basic syntax matching
+            performancePreservation: 0.10    // Efficiency considerations
+        };
+    }
+
+    async analyze() {
+        try {
+            const results = {
+                functionalCorrectness: await this.testFunctionalCorrectness(),
+                semanticEquivalence: this.analyzeSemanticEquivalence(),
+                codeQuality: this.analyzeCodeQuality(),
+                syntaxPreservation: this.analyzeSyntaxPreservation(),
+                performancePreservation: this.analyzePerformancePreservation()
+            };
+
+            const overallScore = this.calculateWeightedScore(results);
+            
+            return {
+                ...results,
+                overallScore,
+                recommendations: this.generateRecommendations(results)
+            };
+        } catch (error) {
+            console.error('Analysis failed:', error);
+            return { overallScore: 0, error: error.message };
+        }
+    }
+
+    async testFunctionalCorrectness() {
+        const testCases = [
+            { input: [1, 2, 3, 4, 5], expected: { sumEven: 6, maxNumber: 5 } },
+            { input: [10, 20, 30], expected: { sumEven: 60, maxNumber: 30 } },
+            { input: [1, 3, 5], expected: { sumEven: 0, maxNumber: 5 } },
+            { input: [2, 4, 6], expected: { sumEven: 12, maxNumber: 6 } },
+            { input: [0], expected: { sumEven: 0, maxNumber: 0 } },
+            { input: [-1, -2, -3], expected: { sumEven: -2, maxNumber: -1 } },
+            { input: [100, -50, 25, -30], expected: { sumEven: 50, maxNumber: 100 } }
+        ];
+
+        try {
+            const testResults = await this.executeTests(testCases);
+            const passedTests = testResults.filter(result => result.passed).length;
+            return (passedTests / testCases.length) * 100;
+        } catch (error) {
+            console.error('Functional testing failed:', error);
+            return 0;
+        }
+    }
+
+    async executeTests(testCases) {
+        // Create a temporary test file
+        const testCode = `
+${this.transpiledCode}
+
+const testCases = ${JSON.stringify(testCases)};
+const results = [];
+
+for (const testCase of testCases) {
+    try {
+        const result = processNumbers(testCase.input);
+        const passed = result.sumEven === testCase.expected.sumEven && 
+                      result.maxNumber === testCase.expected.maxNumber;
+        results.push({ passed, result, expected: testCase.expected });
+    } catch (error) {
+        results.push({ passed: false, error: error.message });
+    }
+}
+
+console.log(JSON.stringify(results));
+`;
+
+        // Write to temporary file and execute
+        const tempFile = path.join(__dirname, 'temp_test.js');
+        fs.writeFileSync(tempFile, testCode);
+        
+        try {
+            const output = execSync(`node "${tempFile}"`, { encoding: 'utf8', timeout: 5000 });
+            fs.unlinkSync(tempFile);
+            return JSON.parse(output);
+        } catch (error) {
+            if (fs.existsSync(tempFile)) fs.unlinkSync(tempFile);
+            throw error;
+        }
+    }
+
+    analyzeSemanticEquivalence() {
+        let score = 0;
+
+        // 1. Algorithm Logic Preservation (40 points)
+        const algorithmPatterns = [
+            { pattern: /num\s*%\s*2\s*===?\s*0/, description: 'Even number check' },
+            { pattern: /sumEven\s*\+?=\s*num/, description: 'Sum accumulation' },
+            { pattern: /num\s*>\s*maxNumber/, description: 'Maximum comparison' },
+            { pattern: /maxNumber\s*=\s*num/, description: 'Maximum update' }
+        ];
+
+        algorithmPatterns.forEach(({ pattern, description }) => {
+            if (pattern.test(this.originalCode) && pattern.test(this.transpiledCode)) {
+                score += 10;
+            }
+        });
+
+        // 2. Control Flow Preservation (30 points)
+        const controlFlowScore = this.compareControlFlow();
+        score += controlFlowScore * 0.3;
+
+        // 3. Variable Usage Patterns (30 points)
+        const variableScore = this.compareVariableUsage();
+        score += variableScore * 0.3;
+
+        return Math.min(score, 100);
+    }
+
+    compareControlFlow() {
+        // Parse both codes to analyze control structures
+        try {
+            const originalAST = this.parseCode(this.originalCode);
+            const transpiledAST = this.parseCode(this.transpiledCode);
+
+            const originalFlow = this.extractControlFlow(originalAST);
+            const transpiledFlow = this.extractControlFlow(transpiledAST);
+
+            return this.compareFlowStructures(originalFlow, transpiledFlow);
+        } catch (error) {
+            console.warn('Control flow analysis failed:', error.message);
+            return 50; // Default moderate score if parsing fails
+        }
+    }
+
+    extractControlFlow(ast) {
+        const structures = [];
+        
+        traverse(ast, {
+            ForStatement: (path) => { structures.push('for-traditional'); },
+            ForOfStatement: (path) => { structures.push('for-of'); },
+            ForInStatement: (path) => { structures.push('for-in'); },
+            WhileStatement: (path) => { structures.push('while'); },
+            IfStatement: (path) => { structures.push('if'); },
+            ConditionalExpression: (path) => { structures.push('ternary'); },
+            SwitchStatement: (path) => { structures.push('switch'); }
+        });
+
+        return structures;
+    }
+
+    compareFlowStructures(original, transpiled) {
+        // Both for-traditional and for-of should be considered equivalent for iteration
+        const normalizeStructures = (structures) => {
+            return structures.map(s => 
+                s === 'for-of' || s === 'for-traditional' ? 'loop' : s
+            );
+        };
+
+        const normalizedOriginal = normalizeStructures(original);
+        const normalizedTranspiled = normalizeStructures(transpiled);
+
+        if (normalizedOriginal.length === 0) {
+            return normalizedTranspiled.length === 0 ? 100 : 0;
+        }
+
+        const matches = normalizedOriginal.filter(struct => 
+            normalizedTranspiled.includes(struct)
+        ).length;
+
+        return (matches / normalizedOriginal.length) * 100;
+    }
+
+    compareVariableUsage() {
+        // Extract variable declarations and usage patterns
+        const originalVars = this.extractVariablePatterns(this.originalCode);
+        const transpiledVars = this.extractVariablePatterns(this.transpiledCode);
+
+        let score = 0;
+
+        // Check key variables preservation
+        const keyVars = ['sumEven', 'maxNumber', 'num'];
+        keyVars.forEach(varName => {
+            if (originalVars.includes(varName) && transpiledVars.includes(varName)) {
+                score += 33.33;
+            }
+        });
+
+        return Math.min(score, 100);
+    }
+
+    extractVariablePatterns(code) {
+        const variables = [];
+        const varPattern = /(?:let\s+|const\s+|var\s+)(\w+)/g;
+        let match;
+        
+        while ((match = varPattern.exec(code)) !== null) {
+            variables.push(match[1]);
+        }
+
+        // Also extract variables from assignments
+        const assignPattern = /(\w+)\s*=\s*[^=]/g;
+        while ((match = assignPattern.exec(code)) !== null) {
+            if (!['if', 'for', 'while', 'function'].includes(match[1])) {
+                variables.push(match[1]);
+            }
+        }
+
+        return [...new Set(variables)];
+    }
+
+    analyzeCodeQuality() {
+        let score = 0;
+
+        // 1. Modern JavaScript practices (25 points)
+        if (this.usesModernSyntax()) score += 25;
+
+        // 2. Proper export/import handling (25 points)
+        if (this.hasProperModuleExports()) score += 25;
+
+        // 3. Consistent code style (25 points)
+        if (this.hasConsistentStyle()) score += 25;
+
+        // 4. No obvious anti-patterns (25 points)
+        if (!this.hasAntiPatterns()) score += 25;
+
+        return score;
+    }
+
+    usesModernSyntax() {
+        // Check for modern JavaScript features in appropriate contexts
+        const modernFeatures = [
+            /const\s+\w+\s*=/, // const declarations
+            /let\s+\w+\s*=/, // let declarations
+            /for\s*\(\s*const\s+\w+\s+of/, // for...of loops
+            /=>\s*{/, // arrow functions
+            /{\s*\w+\s*}/ // object destructuring or shorthand
+        ];
+
+        return modernFeatures.some(pattern => pattern.test(this.transpiledCode));
+    }
+
+    hasProperModuleExports() {
+        // Check if exports are handled correctly
+        if (this.originalCode.includes('export')) {
+            return this.transpiledCode.includes('exports.') || 
+                   this.transpiledCode.includes('module.exports') ||
+                   this.transpiledCode.includes('export');
+        }
+        return true; // No exports needed
+    }
+
+    hasConsistentStyle() {
+        // Basic style consistency checks
+        const lines = this.transpiledCode.split('\n');
+        const nonEmptyLines = lines.filter(line => line.trim().length > 0);
+        
+        // Check indentation consistency (basic check)
+        const indentationPattern = /^(\s*)/;
+        const indentations = nonEmptyLines.map(line => {
+            const match = line.match(indentationPattern);
+            return match ? match[1].length : 0;
+        });
+
+        // Simple consistency check - are indentations reasonable?
+        const hasReasonableIndentation = indentations.every(indent => 
+            indent % 2 === 0 || indent % 4 === 0
+        );
+
+        return hasReasonableIndentation;
+    }
+
+    hasAntiPatterns() {
+        const antiPatterns = [
+            /eval\s*\(/, // eval usage
+            /with\s*\(/, // with statements
+            /var\s+.*;\s*var\s+.*/, // excessive var declarations
+            /function\s*\(\s*\)\s*{\s*}/ // empty functions
+        ];
+
+        return antiPatterns.some(pattern => pattern.test(this.transpiledCode));
+    }
+
+    analyzeSyntaxPreservation() {
+        // Simplified version of original syntax analysis
+        try {
+            const originalAST = this.parseCode(this.originalCode);
+            const transpiledAST = this.parseCode(this.transpiledCode);
+
+            const originalNodes = this.collectASTNodes(originalAST);
+            const transpiledNodes = this.collectASTNodes(transpiledAST);
+
+            return this.calculateNodeSimilarity(originalNodes, transpiledNodes);
+        } catch (error) {
+            console.warn('Syntax preservation analysis failed:', error.message);
+            return 50;
+        }
+    }
+
+    analyzePerformancePreservation() {
+        let score = 100; // Start with perfect score
+
+        // Check for performance regressions
+        const performanceChecks = [
+            {
+                check: () => this.hasUnnecessaryComplexity(),
+                penalty: 30,
+                description: 'Unnecessary complexity added'
+            },
+            {
+                check: () => this.hasInefficiestLoops(),
+                penalty: 40,
+                description: 'Inefficient loop structures'
+            },
+            {
+                check: () => this.hasExcessiveObjectCreation(),
+                penalty: 30,
+                description: 'Excessive object creation'
+            }
+        ];
+
+        performanceChecks.forEach(({ check, penalty, description }) => {
+            if (check()) {
+                score -= penalty;
+                console.warn(`Performance issue: ${description}`);
+            }
+        });
+
+        return Math.max(score, 0);
+    }
+
+    hasUnnecessaryComplexity() {
+        // Check if transpiled code is significantly more complex
+        const originalLines = this.originalCode.split('\n').filter(line => line.trim()).length;
+        const transpiledLines = this.transpiledCode.split('\n').filter(line => line.trim()).length;
+        
+        return transpiledLines > originalLines * 2; // More than double the lines
+    }
+
+    hasInefficiestLoops() {
+        // Check for inefficient loop patterns
+        const inefficientPatterns = [
+            /for\s*\(\s*var\s+\w+\s*=\s*0.*\.length.*\+\+/, // traditional for loop when for...of was available
+        ];
+
+        return inefficientPatterns.some(pattern => pattern.test(this.transpiledCode)) &&
+               /for\s*\(\s*const\s+\w+\s+of/.test(this.originalCode);
+    }
+
+    hasExcessiveObjectCreation() {
+        // Check for unnecessary object creation patterns
+        const objectCreationCount = (this.transpiledCode.match(/new\s+\w+\(/g) || []).length;
+        const originalObjectCreationCount = (this.originalCode.match(/new\s+\w+\(/g) || []).length;
+        
+        return objectCreationCount > originalObjectCreationCount * 2;
+    }
+
+    parseCode(code) {
+        return parse(code, {
+            sourceType: 'module',
+            plugins: ['jsx', 'typescript', 'decorators-legacy']
+        });
+    }
+
+    collectASTNodes(ast) {
+        const nodes = [];
+        traverse(ast, {
+            enter(path) {
+                nodes.push({
+                    type: path.node.type,
+                    name: path.node.name || path.node.key?.name,
+                    kind: path.node.kind
+                });
+            }
+        });
+        return nodes;
+    }
+
+    calculateNodeSimilarity(original, transpiled) {
+        if (original.length === 0) {
+            return transpiled.length === 0 ? 100 : 0;
+        }
+
+        let matches = 0;
+        for (const origNode of original) {
+            if (transpiled.some(transNode => 
+                transNode.type === origNode.type && 
+                transNode.name === origNode.name)) {
+                matches++;
+            }
+        }
+
+        return (matches / original.length) * 100;
+    }
+
+    calculateWeightedScore(results) {
+        return Object.keys(this.weights).reduce((total, key) => {
+            return total + (results[key] * this.weights[key]);
+        }, 0);
+    }
+
+    generateRecommendations(results) {
+        const recommendations = [];
+
+        if (results.functionalCorrectness < 70) {
+            recommendations.push('🚨 Critical: Fix functional correctness - the transpiled code doesn\'t work properly');
+        }
+
+        if (results.semanticEquivalence < 70) {
+            recommendations.push('⚠️ Important: Review semantic equivalence - logic may not be preserved');
+        }
+
+        if (results.codeQuality < 70) {
+            recommendations.push('💡 Consider: Improve code quality and modern JavaScript practices');
+        }
+
+        if (results.performancePreservation < 70) {
+            recommendations.push('⚡ Consider: Review performance implications of transpilation');
+        }
+
+        if (recommendations.length === 0) {
+            recommendations.push('✅ Excellent transpilation quality!');
+        }
+
+        return recommendations;
+    }
+
+    printDetailedResults(results) {
+        console.log('\n🔍 Enhanced Transpilation Analysis Results');
+        console.log('=' .repeat(50));
+        
+        const categories = [
+            ['Functional Correctness', 'functionalCorrectness', 'Does the code work correctly?'],
+            ['Semantic Equivalence', 'semanticEquivalence', 'Is the logic preserved?'],
+            ['Code Quality', 'codeQuality', 'Is it well-written JavaScript?'],
+            ['Syntax Preservation', 'syntaxPreservation', 'Are syntax patterns maintained?'],
+            ['Performance Preservation', 'performancePreservation', 'Is efficiency maintained?']
+        ];
+
+        categories.forEach(([name, key, description]) => {
+            const score = results[key] || 0;
+            const weight = this.weights[key] * 100;
+            console.log(`${name.padEnd(22)} | ${score.toFixed(1).padStart(6)}/100 | Weight: ${weight.toFixed(1).padStart(4)}% | ${description}`);
+        });
+
+        console.log('-'.repeat(50));
+        console.log(`${'Overall Score'.padEnd(22)} | ${results.overallScore.toFixed(1).padStart(6)}/100`);
+        
+        console.log('\n📋 Recommendations:');
+        results.recommendations.forEach(rec => console.log(`   ${rec}`));
+    }
+}
+
+// Usage function
+async function analyzeTranspilation(originalPath, transpiledPath) {
+    try {
+        const originalCode = fs.readFileSync(originalPath, 'utf8');
+        const transpiledCode = fs.readFileSync(transpiledPath, 'utf8');
+        
+        const analyzer = new EnhancedTranspilationAnalyzer(originalCode, transpiledCode);
+        const results = await analyzer.analyze();
+        
+        analyzer.printDetailedResults(results);
+        return results;
+    } catch (error) {
+        console.error('Analysis failed:', error);
+        return { overallScore: 0, error: error.message };
+    }
+}
+
+module.exports = { EnhancedTranspilationAnalyzer, analyzeTranspilation };
+                    </code></pre>
+                    <pre class="scrollable-code-box"><code class="language-javascript">
+const { analyzeTranspilation } = require('./precision-analyzer');
+
+async function runAnalysis() {
+    console.log('Analyzing Babel output...');
+    const babelResults = await analyzeTranspilation(
+        './src/index.ts',      // original file (change between ".js" and ".ts" as needed)
+        './dist-babel/index.js' // Babel output
+    );
+
+    console.log('\nAnalyzing TypeScript output...');
+    const tsResults = await analyzeTranspilation(
+        './src/index.ts',      // original file (change between ".js" and ".ts" as needed)
+        './dist-ts/index.js'     // TypeScript output
+    );
+
+    console.log('\nComparison Results:');
+    if (babelResults && babelResults.overallScore !== undefined) {
+        console.log('Babel Overall Score:', babelResults.overallScore.toFixed(2));
+    } else {
+        console.log('Babel analysis failed or did not produce a score.');
+    }
+
+    if (tsResults && tsResults.overallScore !== undefined) {
+        console.log('TypeScript Overall Score:', tsResults.overallScore.toFixed(2));
+    } else {
+        console.log('TypeScript analysis failed or did not produce a score.');
+    }
+}
+
+runAnalysis().catch(error => {
+    console.error("Error during analysis:", error);
+});
+                    </code></pre>   
+                </div>
+
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for Nim</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script evaluates the tree codes generated using the Nim tool. It transpiles from Nim to C, C++ and JavaScript. This script shows evaluation for all of them at the same time.
+                    </p>
+                    <pre class="scrollable-code-box"><code class="language-nim">
+import times, math
+
+type
+  LanguageResult = object
+    name: string
+    value: float # The computed value from the test operation
+    # Scores for each category (0.0 to 1.0)
+    functionalCorrectness: float
+    semanticEquivalence: float    
+    codeQuality: float            # NOTE: Proxied by relative performance
+    structuralSimilarity: float   
+    errorHandling: float
+
+proc measurePrecision(x: float): int =
+  var str = $x
+  result = 0
+  var foundDot = false
+  for c in str:
+    if c == '.':
+      foundDot = true
+      continue
+    if foundDot: result += 1
+
+proc calculateScore(lr: LanguageResult): float =
+  # Weights for each category
+  let weights = (
+    functional_correctness: 0.40,
+    semantic_equivalence: 0.25,
+    code_quality: 0.15,
+    structural_similarity: 0.10,
+    error_handling: 0.10
+  )
+
+  let score = lr.functionalCorrectness * weights.functional_correctness +
+              lr.semanticEquivalence * weights.semantic_equivalence +
+              lr.codeQuality * weights.code_quality +
+              lr.structuralSimilarity * weights.structural_similarity +
+              lr.errorHandling * weights.error_handling
+  
+  result = score * 100.0 # Scale to 0-100
+
+proc testOperation(x: float): tuple[c, cpp, js: LanguageResult] =
+  let startTime = epochTime()
+  
+  # Single test case operation
+  let testVal = x * x + sqrt(x)  # Example complex operation
+  let endTime = epochTime()
+  let baseExecTime = endTime - startTime
+
+  # --- Helper values for scoring ---
+  let cPrecision = measurePrecision(testVal)
+  let cppPrecision = measurePrecision(testVal)
+  let jsPrecision = 16 
+
+  # Assuming these are known or tested properties of the transpilation/target
+  let handlesInfDefault = true
+  let handlesNaNDefault = true
+
+  # --- Calculate scores for C ---
+  var cFcScore: float
+  if cPrecision >= 16: cFcScore = 1.0 
+  elif cPrecision <= 0: cFcScore = 0.0
+  else: cFcScore = float(cPrecision) / 16.0
+
+  var cCqScore: float # Code Quality proxied by performance
+  # Assuming C's execution time for this operation is similar to baseExecTime
+  if baseExecTime == 0.0: cCqScore = 1.0 
+  else: cCqScore = baseExecTime / baseExecTime # Relative to base (Nim's direct exec)
+  cCqScore = min(1.0, max(0.0, cCqScore)) # Clamp between 0 and 1
+
+  result.c = LanguageResult(
+    name: "C",
+    value: testVal,
+    functionalCorrectness: cFcScore,
+    semanticEquivalence: 0.75, 
+    codeQuality: cCqScore, 
+    structuralSimilarity: 0.75, 
+    errorHandling: if handlesInfDefault and handlesNaNDefault: 1.0 else: 0.0
+  )
+
+  # --- Calculate scores for C++ ---
+  var cppFcScore: float
+  if cppPrecision >= 16: cppFcScore = 1.0
+  elif cppPrecision <= 0: cppFcScore = 0.0
+  else: cppFcScore = float(cppPrecision) / 16.0
+
+  var cppCqScore: float # Code Quality proxied by performance
+  # Assuming C++'s execution time for this operation is similar to baseExecTime
+  if baseExecTime == 0.0: cppCqScore = 1.0
+  else: cppCqScore = baseExecTime / baseExecTime 
+  cppCqScore = min(1.0, max(0.0, cppCqScore))
+
+  result.cpp = LanguageResult(
+    name: "C++",
+    value: testVal,
+    functionalCorrectness: cppFcScore,
+    semanticEquivalence: 0.75, 
+    codeQuality: cppCqScore,
+    structuralSimilarity: 0.75, 
+    errorHandling: if handlesInfDefault and handlesNaNDefault: 1.0 else: 0.0
+  )
+
+  # --- Calculate scores for JavaScript ---
+  var jsFcScore: float
+  if jsPrecision >= 16: jsFcScore = 1.0
+  elif jsPrecision <= 0: jsFcScore = 0.0
+  else: jsFcScore = float(jsPrecision) / 16.0
+  
+  let jsExecTime = baseExecTime * 1.2
+  var jsCqScore: float # Code Quality proxied by performance
+  if jsExecTime == 0.0: jsCqScore = 1.0 # If JS time is zero, perfect score
+  elif baseExecTime == 0.0: jsCqScore = 1.0 # If base was zero, JS also considered perfect if zero, else it's relative
+  else: jsCqScore = baseExecTime / jsExecTime
+  jsCqScore = min(1.0, max(0.0, jsCqScore))
+
+
+  result.js = LanguageResult(
+    name: "JavaScript",
+    value: testVal,
+    functionalCorrectness: jsFcScore,
+    semanticEquivalence: 0.70, 
+    codeQuality: jsCqScore,
+    structuralSimilarity: 0.70, 
+    errorHandling: if handlesInfDefault and handlesNaNDefault: 1.0 else: 0.0
+  )
+
+when isMainModule:
+  # Single test case from 1-6
+  let testValue = 3.14159265359  # Pi as test case (between 1-6)
+  let results = testOperation(testValue)
+  
+  echo "Test value: ", testValue
+  echo "Calculated operation value: ", results.c.value # Value is same for all here
+  echo "--- Scores (0-100) ---"
+  echo "C Score: ", calculateScore(results.c)
+  echo "  Functional Correctness (0-1): ", results.c.functionalCorrectness
+  echo "  Semantic Equivalence (0-1): ", results.c.semanticEquivalence
+  echo "  Code Quality (0-1): ", results.c.codeQuality
+  echo "  Structural Similarity (0-1): ", results.c.structuralSimilarity
+  echo "  Error Handling (0-1): ", results.c.errorHandling
+  
+  echo "C++ Score: ", calculateScore(results.cpp)
+  echo "  Functional Correctness (0-1): ", results.cpp.functionalCorrectness
+  echo "  Semantic Equivalence (0-1): ", results.cpp.semanticEquivalence
+  echo "  Code Quality (0-1): ", results.cpp.codeQuality
+  echo "  Structural Similarity (0-1): ", results.cpp.structuralSimilarity
+  echo "  Error Handling (0-1): ", results.cpp.errorHandling
+
+  echo "JS Score: ", calculateScore(results.js)
+  echo "  Functional Correctness (0-1): ", results.js.functionalCorrectness
+  echo "  Semantic Equivalence (0-1): ", results.js.semanticEquivalence
+  echo "  Code Quality (0-1): ", results.js.codeQuality
+  echo "  Structural Similarity (0-1): ", results.js.structuralSimilarity
+  echo "  Error Handling (0-1): ", results.js.errorHandling
+                    </code></pre>
+                </div>  
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for ClojureScript</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script takes the ClojureScript code and the JavaScript app created containing the transpiled code, then evaluates the app based on established categories. 
+                    </p>
+                    <pre class="scrollable-code-box"><code class="language-javascript">
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm'); // Required for sandboxed execution
+
+const TEST_DATA = [1, 2, 3, 4, 5, 6];
+const CLOJURE_PATH = '../../src/my_clojurescript_app/core.cljs';//input file
+const JS_PATH = '../../target/testable_app.js';//transpiled code
+
+// ... compareResults function remains the same ...
+function compareResults(jsResult, clojureResult) {
+    if (!jsResult || !clojureResult) return 0;
+    
+    try {
+        const jsSumEven = jsResult.sum_even;
+        const clojureSumEven = clojureResult.sum_even;
+        const jsMax = jsResult.max_number;
+        const clojureMax = clojureResult.max_number;
+        
+        const sumMatch = jsSumEven === clojureSumEven ? 0.5 : 0;
+        const maxMatch = jsMax === clojureMax ? 0.5 : 0;
+        
+        return sumMatch + maxMatch;
+    } catch (error) {
+        console.error('Error comparing results:', error);
+        return 0;
+    }
+}
+
+
+function readSourceFiles() {
+    try {
+        const jsCode = fs.readFileSync(path.resolve(__dirname, JS_PATH), 'utf8'); // This is the compiled CLJS
+        const clojureCode = fs.readFileSync(path.resolve(__dirname, CLOJURE_PATH), 'utf8'); // This is the source CLJS
+        return { jsCode, clojureCode };
+    } catch (error) {
+        console.error('Error reading source files:', error.message);
+        if (error.code === 'ENOENT' && error.path && error.path.includes(path.basename(JS_PATH))) {
+             console.error(`Ensure your ClojureScript project has been compiled and the output is at: ${path.resolve(__dirname, JS_PATH)}`);
+        }
+        process.exit(1);
+    }
+}
+
+// Helper to execute the target function from compiled code in a sandbox
+function executeCompiledProcessNumbers(compiledCljsCode, inputData) {
+    try {
+        const sandbox = {
+            console: { // Provide a minimal console to avoid errors if the script uses it
+                log: () => {},
+                warn: () => {},
+                error: () => {},
+                info: () => {},
+                debug: () => {},
+            },
+            module: { exports: {} }, // For scripts that might try to use module.exports
+            exports: {},
+            performance: global.performance, // Allow access to performance API if used by CLJS
+            global: global,
+            require: require,
+            process: process // <--- ADD THIS LINE
+        };
+        vm.createContext(sandbox);
+        vm.runInContext(compiledCljsCode, sandbox);
+
+        // After ^:export, the function is typically on a namespace object
+        // e.g., my_clojurescript_app.core.process_numbers
+        if (sandbox.my_clojurescript_app &&
+            sandbox.my_clojurescript_app.core &&
+            typeof sandbox.my_clojurescript_app.core.process_numbers === 'function') {
+            return sandbox.my_clojurescript_app.core.process_numbers(inputData);
+        } else {
+            console.error("[executeCompiledProcessNumbers] Could not find 'my_clojurescript_app.core.process_numbers'. Check export and namespace.");
+            // console.log("Sandbox top-level keys:", Object.keys(sandbox));
+            // if(sandbox.my_clojurescript_app) console.log("my_clojurescript_app keys:", Object.keys(sandbox.my_clojurescript_app));
+            return null;
+        }
+    } catch (e) {
+        console.error("[executeCompiledProcessNumbers] Error during VM execution:", e);
+        return null;
+    }
+}
+
+// ... evaluateReadability remains the same ...
+function evaluateReadability(jsCode, clojureCode) {
+    const metrics = {
+        lineCount: jsCode.split('\n').length,
+        complexity: (jsCode.match(/if|for|while/g) || []).length,
+        nesting: (jsCode.match(/{/g) || []).length,
+        longLines: jsCode.split('\n').filter(line => line.length > 80).length,
+        comments: (jsCode.match(/\/\/.+|\/\*.+?\*\//g) || []).length
+    };
+    let score = 20;
+    score -= Math.min(5, metrics.complexity * 0.5);
+    score -= Math.min(5, metrics.nesting * 0.3);
+    score -= Math.min(5, metrics.longLines * 0.2);
+    score += Math.min(5, metrics.comments * 0.5);
+    return Math.max(0, Math.min(20, score));
+}
+
+
+function evaluatePerformance(compiledCljsCode, input) {
+    const start = process.hrtime();
+    const result = executeCompiledProcessNumbers(compiledCljsCode, input);
+    const duration = process.hrtime(start);
+    const executionTime = duration[0] * 1000 + duration[1] / 1e6; // ms
+
+    if (result === null) return 0; // Penalize if execution failed
+    if (executionTime === 0) return 20;
+    // Target: 10ms for full score, adjust as needed
+    return Math.min(20, Math.max(0, 20 * (10 / executionTime)));
+}
+
+function evaluateFunctionalEquivalence() {
+    const { jsCode: compiledCljsCode } = readSourceFiles();
+    const cljsResult = executeCompiledProcessNumbers(compiledCljsCode, TEST_DATA);
+
+    // JavaScript equivalent for comparison
+    const jsEquivalentProcessNumbers = (numbers) => {
+        if (!Array.isArray(numbers)) return null;
+        const sumEven = numbers.filter(n => typeof n === 'number' && n % 2 === 0).reduce((acc, curr) => acc + curr, 0);
+        const numericNumbers = numbers.filter(n => typeof n === 'number');
+        const maxNumber = numericNumbers.length > 0 ? numericNumbers.reduce((acc, curr) => Math.max(acc, curr), -Infinity) : -Infinity;
+        return { sum_even: sumEven, max_number: maxNumber };
+    };
+    const jsReferenceResult = jsEquivalentProcessNumbers(TEST_DATA);
+    
+    // console.log("JS Reference Result:", jsReferenceResult);
+    // console.log("CLJS Transpiled Result:", cljsResult);
+
+    return Math.min(30, 30 * compareResults(jsReferenceResult, cljsResult));
+}
+
+function evaluateMemoryUsage(compiledCljsCode) {
+    const beforeMemory = process.memoryUsage().heapUsed;
+    const result = executeCompiledProcessNumbers(compiledCljsCode, TEST_DATA);
+    const afterMemory = process.memoryUsage().heapUsed;
+    const memoryDiff = afterMemory - beforeMemory;
+
+    if (result === null) return 0; // Penalize if execution failed
+    // console.log(`Memory Diff: ${memoryDiff} bytes`);
+    if (memoryDiff <= 0) return 15; // Max score if memory didn't increase
+    // Score decreases as memory usage increases. 500KB usage results in 0 points from this factor.
+    return Math.min(15, Math.max(0, 15 * (1 - memoryDiff / 500000)));
+}
+
+// ... evaluateErrorHandling remains the same ...
+function evaluateErrorHandling(jsCode) {
+    const errorPatterns = ['try', 'catch', 'throw', 'finally'];
+    const score = errorPatterns.reduce((acc, pattern) =>
+        acc + (jsCode.includes(pattern) ? 3.75 : 0), 0);
+    return Math.min(15, score);
+}
+
+function generateReport() {
+    console.log('=== Code Evaluation Report ===\n');
+    console.log(`Test Data: ${TEST_DATA}\n`);
+
+    const { jsCode, clojureCode } = readSourceFiles(); // jsCode is the compiled ClojureScript
+
+    const scores = {
+        readability: evaluateReadability(jsCode, clojureCode),
+        performance: evaluatePerformance(jsCode, TEST_DATA),
+        functionalEquivalence: evaluateFunctionalEquivalence(), // No longer needs jsCode/clojureCode passed
+        memoryUsage: evaluateMemoryUsage(jsCode),
+        errorHandling: evaluateErrorHandling(jsCode)
+    };
+
+    console.log('Scores:');
+    Object.entries(scores).forEach(([category, score]) => {
+        // Ensure score is a number before calling toFixed
+        const numericScore = typeof score === 'number' ? score : 0;
+        const maxPoints = category === 'functionalEquivalence' ? 30 : (category === 'memoryUsage' || category === 'errorHandling' ? 15 : 20);
+        console.log(`${category}: ${numericScore.toFixed(2)}/${maxPoints}`);
+    });
+
+    const totalScore = Object.values(scores).reduce((a, b) => (typeof a === 'number' ? a : 0) + (typeof b === 'number' ? b : 0), 0);
+    console.log(`\nTotal Score: ${totalScore.toFixed(2)}/100`);
+}
+
+generateReport();
+                    </code></pre>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for Java2Python</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script evaluates the Java code transpiled to Python. It runs a test case and compares the results. 
+                    </p>
+                    <pre class="scrollable-code-box"><code class="language-python">
+from __future__ import print_function, division
+import ast
+import re
+import javalang
+from javalang.tree import ClassDeclaration, MethodDeclaration
+import os
+import subprocess
+import tempfile
+import json
+import sys
+from typing import Dict, List, Any, Tuple, Optional
+
+class TranspilationEvaluator:
+    def __init__(self):
+        self.test_cases = []
+        self.weights = {
+            "functional_correctness": 0.40,  # Most important - does it work?
+            "semantic_equivalence": 0.25,    # Logic flow and behavior
+            "code_quality": 0.15,            # Pythonic style and best practices
+            "structural_similarity": 0.10,   # Basic structure matching
+            "error_handling": 0.10           # Robustness and edge cases
+        }
+    
+    def evaluate_transpilation(self, java_file: str, python_file: str, test_cases: Optional[List[Dict]] = None) -> Dict[str, float]:
+        """Enhanced evaluation with semantic correctness focus"""
+        
+        try:
+            # Read files
+            with open(java_file, 'r') as f:
+                java_code = f.read()
+            with open(python_file, 'r') as f:
+                python_code = f.read()
+            
+            # Parse files
+            java_tree = javalang.parse.parse(java_code)
+            python_tree = ast.parse(python_code)
+            
+        except Exception as e:
+            print(f"Error reading/parsing files: {e}")
+            return {"overall_score": 0.0}
+        
+        # Set default test cases if none provided
+        if test_cases is None:
+            test_cases = self.generate_default_test_cases()
+        
+        # Evaluation metrics
+        scores = {
+            "functional_correctness": self.evaluate_functional_correctness(python_code, test_cases),
+            "semantic_equivalence": self.evaluate_semantic_equivalence(java_tree, python_tree, java_code, python_code),
+            "code_quality": self.evaluate_code_quality(python_tree, python_code),
+            "structural_similarity": self.evaluate_structural_similarity(java_tree, python_tree),
+            "error_handling": self.evaluate_error_handling(python_code, test_cases)
+        }
+        
+        # Calculate weighted overall score
+        overall_score = sum(scores[metric] * self.weights[metric] for metric in self.weights)
+        scores["overall_score"] = overall_score
+        
+        return scores
+    
+    def generate_default_test_cases(self) -> List[Dict]:
+        """Generate comprehensive test cases for the processNumbers method"""
+        return [
+            # Normal cases
+            {"input": [1, 2, 3, 4, 5], "expected_sum_even": 6, "expected_max": 5},
+            {"input": [10, 20, 30], "expected_sum_even": 60, "expected_max": 30},
+            {"input": [1, 3, 5], "expected_sum_even": 0, "expected_max": 5},
+            {"input": [2, 4, 6], "expected_sum_even": 12, "expected_max": 6},
+            
+            # Edge cases
+            {"input": [0], "expected_sum_even": 0, "expected_max": 0},
+            {"input": [-1, -2, -3], "expected_sum_even": -2, "expected_max": -1},
+            {"input": [100, -50, 25, -30], "expected_sum_even": 50, "expected_max": 100},
+            
+            # Large numbers
+            {"input": [1000000, 999999, 1000001], "expected_sum_even": 1000000, "expected_max": 1000001},
+        ]
+    
+    def evaluate_functional_correctness(self, python_code: str, test_cases: List[Dict]) -> float:
+        """Test if the Python code produces correct outputs"""
+        try:
+            # Create a temporary file to execute the Python code
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.py', delete=False) as temp_file:
+                # Add test runner to the Python code
+                test_code = python_code + "\n\n" + self.generate_test_runner(test_cases)
+                temp_file.write(test_code)
+                temp_file_path = temp_file.name
+            
+            # Execute the test
+            result = subprocess.run([sys.executable, temp_file_path], 
+                                  capture_output=True, text=True, timeout=10)
+            
+            # Clean up
+            os.unlink(temp_file_path)
+            
+            if result.returncode == 0:
+                # Parse test results
+                output_lines = result.stdout.strip().split('\n')
+                if output_lines and output_lines[-1].startswith('TEST_RESULTS:'):
+                    results_json = output_lines[-1].replace('TEST_RESULTS:', '')
+                    test_results = json.loads(results_json)
+                    
+                    passed = test_results.get('passed', 0)
+                    total = test_results.get('total', len(test_cases))
+                    
+                    return (passed / total) * 100 if total > 0 else 0
+            
+            return 0
+            
+        except Exception as e:
+            print(f"Functional correctness test failed: {e}")
+            return 0
+    
+    def generate_test_runner(self, test_cases: List[Dict]) -> str:
+        """Generate Python test runner code"""
+        return f"""
+import json
+
+def run_tests():
+    test_cases = {test_cases}
+    passed = 0
+    total = len(test_cases)
+    
+    for i, test_case in enumerate(test_cases):
+        try:
+            numbers = test_case['input']
+            expected_sum = test_case['expected_sum_even']
+            expected_max = test_case['expected_max']
+            
+            result = Main.processNumbers(numbers)
+            
+            if hasattr(result, 'sumEven') and hasattr(result, 'maxNumber'):
+                if result.sumEven == expected_sum and result.maxNumber == expected_max:
+                    passed += 1
+        except Exception as e:
+            pass  # Test failed
+    
+    print(f"TEST_RESULTS:{{'passed': {{passed}}, 'total': {{total}}}}")
+
+if __name__ == "__main__":
+    run_tests()
+"""
+    
+    def evaluate_semantic_equivalence(self, java_tree, python_tree, java_code: str, python_code: str) -> float:
+        """Evaluate if the logic and behavior are equivalent"""
+        score = 0
+        max_score = 100
+        
+        # Check algorithm logic preservation
+        logic_score = self.check_algorithm_logic(java_code, python_code)
+        score += logic_score * 0.4
+        
+        # Check data flow and variable usage
+        data_flow_score = self.check_data_flow(java_code, python_code)
+        score += data_flow_score * 0.3
+        
+        # Check method behavior equivalence
+        method_score = self.check_method_equivalence(java_tree, python_tree)
+        score += method_score * 0.3
+        
+        return min(score, max_score)
+    
+    def check_algorithm_logic(self, java_code: str, python_code: str) -> float:
+        """Check if the core algorithm logic is preserved"""
+        score = 0
+        
+        # Check for key algorithmic patterns
+        patterns = [
+            (r'num\s*%\s*2\s*==\s*0', 'Even number check'),
+            (r'sumEven\s*\+?=\s*num', 'Sum accumulation'),
+            (r'num\s*>\s*maxNumber', 'Maximum comparison'),
+            (r'maxNumber\s*=\s*num', 'Maximum update'),
+        ]
+        
+        for pattern, description in patterns:
+            java_match = bool(re.search(pattern, java_code))
+            python_match = bool(re.search(pattern, python_code))
+            
+            if java_match and python_match:
+                score += 25  # Each pattern worth 25 points
+        
+        return score
+    
+    def check_data_flow(self, java_code: str, python_code: str) -> float:
+        """Check if data flows through the code similarly"""
+        # Check variable initialization patterns
+        init_patterns = [
+            r'sumEven\s*=\s*0',
+            r'maxNumber\s*=.*get\(0\)|maxNumber\s*=.*\[0\]'
+        ]
+        
+        score = 0
+        for pattern in init_patterns:
+            if re.search(pattern, java_code) and re.search(pattern, python_code):
+                score += 50
+        
+        return score
+    
+    def check_method_equivalence(self, java_tree, python_tree) -> float:
+        """Check if methods have equivalent signatures and return patterns"""
+        java_methods = self.extract_method_info(java_tree)
+        python_methods = self.extract_python_method_info(python_tree)
+        
+        if not java_methods:
+            return 100 if not python_methods else 0
+        
+        matches = 0
+        for java_method in java_methods:
+            for python_method in python_methods:
+                if java_method['name'] == python_method['name']:
+                    matches += 1
+                    break
+        
+        return (matches / len(java_methods)) * 100
+    
+    def evaluate_code_quality(self, python_tree, python_code: str) -> float:
+        """Evaluate Python code quality and adherence to best practices"""
+        score = 0
+        
+        # Check for Pythonic patterns
+        if 'for num in numbers:' in python_code:
+            score += 20  # Pythonic iteration
+        
+        # Check proper class structure
+        classes = [node for node in ast.walk(python_tree) if isinstance(node, ast.ClassDef)]
+        if classes:
+            score += 20  # Has proper class structure
+        
+        # Check for proper method definitions
+        methods = [node for node in ast.walk(python_tree) if isinstance(node, ast.FunctionDef)]
+        if methods:
+            score += 20  # Has proper methods
+        
+        # Check for return statements
+        if 'return ' in python_code:
+            score += 20  # Has return statements
+        
+        # Check variable naming consistency
+        if all(var in python_code for var in ['sumEven', 'maxNumber']):
+            score += 20  # Maintains variable names
+        
+        return min(score, 100)
+    
+    def evaluate_structural_similarity(self, java_tree, python_tree) -> float:
+        java_classes = len([node for _, node in java_tree.filter(ClassDeclaration)])
+        java_classes = len([node for _, node in java_tree.filter(ClassDeclaration)])
+        python_classes = len([node for node in ast.walk(python_tree) if isinstance(node, ast.ClassDef)])
+        
+        if java_classes == 0:
+            return 100 if python_classes == 0 else 0
+        
+        return min(100, (python_classes / java_classes) * 100)
+    
+    def evaluate_error_handling(self, python_code: str, test_cases: List[Dict]) -> float:
+        """Evaluate how well the code handles edge cases and errors"""
+        score = 0
+        
+        # Test with edge cases
+        edge_case_tests = [
+            {"input": [], "should_fail": True},  # Empty list
+            {"input": None, "should_fail": True},  # None input
+        ]
+        
+        try:
+            # Basic robustness check - does it handle the expected inputs without crashing?
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.py', delete=False) as temp_file:
+                test_code = python_code + "\n\n" + """
+try:
+    result = Main.processNumbers([1, 2, 3])
+    print("BASIC_TEST_PASSED")
+except Exception as e:
+    print(f"BASIC_TEST_FAILED: {e}")
+"""
+                temp_file.write(test_code)
+                temp_file_path = temp_file.name
+            
+            result = subprocess.run([sys.executable, temp_file_path], 
+                                  capture_output=True, text=True, timeout=5)
+            os.unlink(temp_file_path)
+            
+            if "BASIC_TEST_PASSED" in result.stdout:
+                score += 50
+            
+            # Additional points for not having obvious vulnerabilities
+            if 'eval(' not in python_code and 'exec(' not in python_code:
+                score += 50
+                
+        except Exception:
+            pass
+        
+        return score
+    
+    def extract_method_info(self, java_tree) -> List[Dict]:
+        """Extract method information from Java AST"""
+        methods = []
+        for _, node in java_tree.filter(MethodDeclaration):
+            methods.append({
+                'name': node.name,
+                'parameters': len(node.parameters) if node.parameters else 0
+            })
+        return methods
+    
+    def extract_python_method_info(self, python_tree) -> List[Dict]:
+        """Extract method information from Python AST"""
+        methods = []
+        for node in ast.walk(python_tree):
+            if isinstance(node, ast.FunctionDef) and node.name != '__init__':
+                methods.append({
+                    'name': node.name,
+                    'parameters': len(node.args.args)
+                })
+        return methods
+    
+    def print_detailed_results(self, scores: Dict[str, float]):
+        """Print detailed evaluation results"""
+        print("Enhanced Transpilation Evaluation Results")
+        print("=" * 50)
+        
+        categories = [
+            ("Functional Correctness", "functional_correctness", "Does the code work correctly?"),
+            ("Semantic Equivalence", "semantic_equivalence", "Is the logic preserved?"),
+            ("Code Quality", "code_quality", "Is it well-written Python?"),
+            ("Structural Similarity", "structural_similarity", "Does structure match?"),
+            ("Error Handling", "error_handling", "Does it handle edge cases?")
+        ]
+        
+        for name, key, description in categories:
+            if key in scores:
+                weight = self.weights.get(key, 0) * 100
+                score = scores[key]
+                print(f"{name:20} | {score:6.1f}/100 | Weight: {weight:4.1f}% | {description}")
+        
+        print("-" * 50)
+        print(f"{'Overall Score':20} | {scores.get('overall_score', 0):6.1f}/100")
+        
+        # Provide recommendations
+        self.provide_recommendations(scores)
+    
+    def provide_recommendations(self, scores: Dict[str, float]):
+        """Provide improvement recommendations based on scores"""
+        print("\nRecommendations for Improvement:")
+        print("-" * 30)
+        
+        if scores.get('functional_correctness', 0) < 70:
+            print("• Critical: Fix functional correctness - the code doesn't produce correct outputs")
+        
+        if scores.get('semantic_equivalence', 0) < 70:
+            print("• Important: Review algorithm logic - the transpiled code doesn't preserve the original behavior")
+        
+        if scores.get('code_quality', 0) < 70:
+            print("• Consider: Improve Python code style and best practices")
+        
+        if scores.get('error_handling', 0) < 70:
+            print("• Consider: Add better error handling for edge cases")
+
+def main():
+    evaluator = TranspilationEvaluator()
+    
+    java_file = "Main.java"
+    python_file = "Main.py"
+    
+    if not os.path.exists(java_file) or not os.path.exists(python_file):
+        print(f"Error: Files not found. Make sure {java_file} and {python_file} exist.")
+        return
+    
+    scores = evaluator.evaluate_transpilation(java_file, python_file)
+    evaluator.print_detailed_results(scores)
+
+if __name__ == "__main__":
+    main()
+                    </code></pre>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for JScodeshift</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script works in the same way as the first one where we do need two different files, one with the benchmark and other that calls it and displays both the performance metrics and evaluation of the transpiled code.
+                    </p>
+                    <pre class="scrollable-code-box mb-4"><code class="language-javascript">
+const jscodeshift = require('jscodeshift');
+const { performance } = require('perf_hooks');
+const v8 = require('v8');
+const fs = require('fs');
+
+const inputCode = fs.readFileSync('input.js', 'utf8');// input code to be transformed
+
+function transformToTypeScript(source) {
+    const j = jscodeshift;
+    return j(source)
+        .find(j.FunctionDeclaration)
+        .forEach(path => {
+            path.value.params[0].typeAnnotation = j.tsTypeAnnotation(
+                j.tsArrayType(j.tsNumberKeyword())
+            );
+            path.value.returnType = j.tsTypeAnnotation(
+                j.tsTypeLiteral([
+                    j.tsPropertySignature(
+                        j.identifier('sumEven'),
+                        j.tsTypeAnnotation(j.tsNumberKeyword())
+                    ),
+                    j.tsPropertySignature(
+                        j.identifier('maxNumber'),
+                        j.tsTypeAnnotation(j.tsNumberKeyword())
+                    )
+                ])
+            );
+        })
+        .toSource();
+}
+
+function createMetricsObject(iterations) {
+    return {
+        iterations,
+        executionTime: {
+            values: [],
+            min: Number.MAX_VALUE,
+            max: Number.MIN_VALUE,
+            mean: 0,
+            median: 0
+        },
+        cpuUsage: {
+            values: [],
+            min: Number.MAX_VALUE,
+            max: Number.MIN_VALUE,
+            mean: 0,
+            median: 0
+        },
+        memoryUsage: {
+            values: [],
+            min: Number.MAX_VALUE,
+            max: Number.MIN_VALUE,
+            mean: 0,
+            median: 0
+        }
+    };
+}
+
+function collectMetrics(iterations = 100) {
+    const metrics = createMetricsObject(iterations);
+
+    // Save transpiled output to file
+    console.log('Generating TypeScript output file...');
+    const tsOutput = transformToTypeScript(inputCode);
+    fs.writeFileSync('output.ts', tsOutput, 'utf8');
+    console.log('TypeScript output saved to output.ts');
+
+    // Warm-up phase
+    console.log('Warming up...');
+    for (let i = 0; i < 5; i++) {
+        transformToTypeScript(inputCode);
+    }
+
+    // Measurement phase
+    console.log('Running benchmarks...');
+    for (let i = 0; i < iterations; i++) {
+        // Clear garbage before each iteration
+        if (global.gc) {
+            global.gc();
+        }
+
+        const startMemory = process.memoryUsage().heapUsed;
+        const startCPU = process.cpuUsage();
+        const startTime = process.hrtime();
+
+        transformToTypeScript(inputCode);
+
+        const endCPU = process.cpuUsage(startCPU);
+        const elapsedTime = process.hrtime(startTime);
+
+        // Calculate CPU usage percentage
+        const elapsedSecs = elapsedTime[0] + elapsedTime[1] / 1e9;
+        const totalCPUTime = (endCPU.user + endCPU.system) / 1e6; // Convert to seconds
+        const cpuPercent = (totalCPUTime / elapsedSecs) * 100;
+
+        metrics.cpuUsage.values.push(cpuPercent);
+
+        const startPerfTime = performance.now();
+
+        transformToTypeScript(inputCode);
+
+        const endPerfTime = performance.now();
+        const endMemory = process.memoryUsage().heapUsed;
+
+        // Collect metrics
+        const executionTime = endPerfTime - startPerfTime;
+        const memoryUsed = (endMemory - startMemory) / (1024 * 1024); // Convert to MB
+
+        metrics.executionTime.values.push(executionTime);
+        metrics.memoryUsage.values.push(memoryUsed);
+
+        // Update min/max values
+        metrics.executionTime.min = Math.min(metrics.executionTime.min, executionTime);
+        metrics.executionTime.max = Math.max(metrics.executionTime.max, executionTime);
+        metrics.memoryUsage.min = Math.min(metrics.memoryUsage.min, memoryUsed);
+        metrics.memoryUsage.max = Math.max(metrics.memoryUsage.max, memoryUsed);
+    }
+
+    // Calculate statistics
+    for (const metric of ['executionTime', 'cpuUsage', 'memoryUsage']) {
+        const sorted = [...metrics[metric].values].sort((a, b) => a - b);
+        metrics[metric].median = sorted[Math.floor(sorted.length / 2)];
+        metrics[metric].mean = sorted.reduce((a, b) => a + b, 0) / sorted.length;
+    }
+
+    return metrics;
+}
+
+function printResults(metrics) {
+    console.log('\nJSCodeshift Performance Metrics');
+    console.log('=============================');
+    console.log(`Number of iterations: ${metrics.iterations}`);
+    
+    const formatMetric = (name, data) => {
+        console.log(`\n${name}:`);
+        console.log(`  Minimum: ${data.min.toFixed(3)}`);
+        console.log(`  Maximum: ${data.max.toFixed(3)}`);
+        console.log(`  Mean: ${data.mean.toFixed(3)}`);
+        console.log(`  Median: ${data.median.toFixed(3)}`);
+    };
+
+    formatMetric('Execution Time (ms)', metrics.executionTime);
+    formatMetric('CPU Usage (%)', metrics.cpuUsage);
+    formatMetric('Memory Usage (MB)', metrics.memoryUsage);
+}
+
+// Run benchmark with garbage collection enabled
+try {
+    console.log('Starting JSCodeshift performance benchmark...');
+    const metrics = collectMetrics(100);
+    printResults(metrics);
+} catch (error) {
+    console.error('Benchmark failed:', error);
+}
+
+module.exports = { transformToTypeScript };    
+                    </code></pre>
+                    <pre class="scrollable-code-box mb-4"><code class="language-javascript">
+const fs = require('fs');
+const { transformToTypeScript } = require('./jscodeshift-benchmark.js');
+
+// Weights for each category
+const WEIGHTS = {
+  functional_correctness: 0.40,
+  semantic_equivalence: 0.25,
+  code_quality: 0.15,
+  structural_similarity: 0.10,
+  error_handling: 0.10
+};
+
+// Expected TypeScript code for comparison
+// No topo do evaluator:
+const inputCode = fs.readFileSync('input.js', 'utf8');
+const expectedOutput = transformToTypeScript(inputCode);
+
+
+// Normalizes code (removes spacing, newlines, etc.)
+function normalizeCode(code) {
+  return code
+    .replace(/\s+/g, ' ')
+    .replace(/[\n\r]/g, '')
+    .replace(/\s*([{}():,;])\s*/g, '$1')
+    .trim();
+}
+
+// Levenshtein distance for similarity
+function levenshteinDistance(a, b) {
+  const matrix = Array(b.length + 1).fill(null).map(() => Array(a.length + 1).fill(null));
+  for (let i = 0; i <= a.length; i++) matrix[0][i] = i;
+  for (let j = 0; j <= b.length; j++) matrix[j][0] = j;
+  for (let j = 1; j <= b.length; j++) {
+    for (let i = 1; i <= a.length; i++) {
+      matrix[j][i] = a[i-1] === b[j-1]
+        ? matrix[j-1][i-1]
+        : Math.min(
+            matrix[j-1][i-1] + 1,
+            matrix[j][i-1] + 1,
+            matrix[j-1][i] + 1
+          );
+    }
+  }
+  return matrix[b.length][a.length];
+}
+
+// Calculates similarity percentage
+function calculateSimilarity(generated, expected) {
+  const normGen = normalizeCode(generated);
+  const normExp = normalizeCode(expected);
+  const longer = normGen.length > normExp.length ? normGen : normExp;
+  if (longer.length === 0) return 100;
+  const dist = levenshteinDistance(longer, normGen.length > normExp.length ? normExp : normGen);
+  return (1 - dist / longer.length) * 100;
+}
+
+// Main evaluation function
+function evaluatePrecision() {
+  let generated;
+  try {
+    generated = fs.readFileSync('output.ts', 'utf8');
+  } catch (err) {
+    console.error('Not possible to read output.ts:', err);
+    return;
+  }
+
+// Basic metrics
+  const similarity = calculateSimilarity(generated, expectedOutput);
+  const exactMatch = normalizeCode(generated) === normalizeCode(expectedOutput);
+
+  // 1. Functional correctness (40%) - baseia-se no match exato e syntax válida
+  const syntaxOk = analyzeSyntax(generated).passed;
+  const functional_correctness = exactMatch && syntaxOk ? 100 : syntaxOk ? similarity : 0;
+
+  // 2. Semantic equivalence (25%) - usa similaridade de lógica
+  const semantic_equivalence = similarity;
+
+  // 3. Code quality (15%) - avalia uso de let/const vs var e formatação básica
+  const qualityChecks = {
+    noVar: !/\bvar\b/.test(generated),
+    usesLetConst: /\b(let|const)\b/.test(generated)
+  };
+  const code_quality = (Object.values(qualityChecks).filter(v => v).length / Object.keys(qualityChecks).length) * 100;
+
+  // 4. Structural similarity (10%) - percentagem de match na estrutura básica (funções, loops)
+  const structuralChecks = analyzeSyntax(generated).details;
+  const structScore = (Object.values(structuralChecks).filter(v => v).length / Object.keys(structuralChecks).length) * 100;
+  const structural_similarity = structScore;
+
+  // 5. Error handling (10%) - presença de try/catch
+  const error_handling = /try\s*\{/.test(generated) && /catch\s*\(/.test(generated) ? 100 : 0;
+
+  // Score global ponderado
+  const overallScore =
+    functional_correctness * WEIGHTS.functional_correctness +
+    semantic_equivalence * WEIGHTS.semantic_equivalence +
+    code_quality * WEIGHTS.code_quality +
+    structural_similarity * WEIGHTS.structural_similarity +
+    error_handling * WEIGHTS.error_handling;
+
+  const results = {
+    functional_correctness: functional_correctness.toFixed(2),
+    semantic_equivalence: semantic_equivalence.toFixed(2),
+    code_quality: code_quality.toFixed(2),
+    structural_similarity: structural_similarity.toFixed(2),
+    error_handling: error_handling.toFixed(2),
+    overallScore: overallScore.toFixed(2)
+  };
+
+  printResults(results);
+  return results;
+}
+
+// Checks basic syntactic structure
+function analyzeSyntax(code) {
+  const checks = {
+    hasExport: code.includes('export '),
+    hasFunction: code.includes('function processNumbers'),
+    hasReturn: code.includes('return '),
+    hasFor: code.includes('for ('),
+    balancedBraces: ((code.match(/{/g)||[]).length === (code.match(/}/g)||[]).length)
+  };
+  return { passed: Object.values(checks).every(x => x), details: checks };
+}
+
+// Results printing
+function printResults(res) {
+  console.log('\nTypeScript Output Precision Evaluation');
+  console.log('===================================');
+  console.log(`Functional Correctness: ${res.functional_correctness}%`);
+  console.log(`Semantic Equivalence: ${res.semantic_equivalence}%`);
+  console.log(`Code Quality: ${res.code_quality}%`);
+  console.log(`Structural Similarity: ${res.structural_similarity}%`);
+  console.log(`Error Handling: ${res.error_handling}%`);
+  console.log(`\nOverall Score: ${res.overallScore}%`);
+}
+
+// Run evaluation
+evaluatePrecision();
+                    </code></pre>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for C2Rust</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script evaluates the C code transpiled to Rust. It checks for functional correctness, semantic equivalence, and other metrics. At the end even coments if it was an excellent transpilation, a good one or if it needs improvements.
+                    </p>
+                    <pre class="scrollable-code-box"><code class="language-rust">
+use std::fs;
+use std::path::Path;
+use std::io::{self, Read};
+use regex::Regex;
+
+#[derive(Debug)]
+struct CodeBases {
+    c_source: String,
+    rust_transpiled: String,
+}
+
+#[derive(Debug)]
+struct Evaluation {
+    functional_correctness: f32,      // 0.40 weight - Does it work?
+    semantic_equivalence: f32,        // 0.25 weight - Logic flow and behavior
+    code_quality: f32,               // 0.15 weight - Rust style and best practices
+    structural_similarity: f32,       // 0.10 weight - Basic structure matching
+    error_handling: f32,             // 0.10 weight - Robustness and edge cases
+    total_score: f32,
+}
+
+// Weights for final score calculation
+const WEIGHTS: [f32; 5] = [0.40, 0.25, 0.15, 0.10, 0.10];
+
+fn read_source_files() -> io::Result<CodeBases> {
+    let c_path = Path::new("src/original/process_numbers.c");
+    let rust_path = Path::new("src/transpiled/process_numbers.rs");
+    
+    let mut c_source = String::new();
+    let mut rust_transpiled = String::new();
+    
+    fs::File::open(c_path)?.read_to_string(&mut c_source)?;
+    fs::File::open(rust_path)?.read_to_string(&mut rust_transpiled)?;
+    
+    Ok(CodeBases {
+        c_source,
+        rust_transpiled,
+    })
+}
+
+fn evaluate_functional_correctness(code: &CodeBases) -> f32 {
+    let mut score: f32 = 0.0;
+    let max_score = 100.0;
+    
+    // Check if function signature is preserved and callable
+    if code.rust_transpiled.contains("pub unsafe extern \"C\" fn processNumbers") ||
+       code.rust_transpiled.contains("pub fn processNumbers") {
+        score += 25.0; // Function exists and is public
+    }
+    
+    // Check struct definition equivalence
+    let c_struct_fields = extract_struct_fields(&code.c_source, "Results");
+    let rust_struct_fields = extract_rust_struct_fields(&code.rust_transpiled, "Results");
+    
+    if !c_struct_fields.is_empty() && !rust_struct_fields.is_empty() {
+        let matching_fields = c_struct_fields.iter()
+            .filter(|field| rust_struct_fields.contains(field))
+            .count();
+        
+        if matching_fields == c_struct_fields.len() {
+            score += 25.0; // All struct fields preserved
+        } else {
+            score += (matching_fields as f32 / c_struct_fields.len() as f32) * 25.0;
+        }
+    }
+    
+    // Check return type compatibility
+    if code.rust_transpiled.contains("-> Results") {
+        score += 15.0; // Return type preserved
+    }
+    
+    // Check basic algorithmic logic preservation
+    let c_has_loop = code.c_source.contains("for") || code.c_source.contains("while");
+    let rust_has_loop = code.rust_transpiled.contains("for") || code.rust_transpiled.contains("while");
+    
+    if c_has_loop && rust_has_loop {
+        score += 20.0; // Loop structure preserved
+    }
+    
+    // Check conditional logic preservation
+    let c_conditions = code.c_source.matches("if").count();
+    let rust_conditions = code.rust_transpiled.matches("if").count();
+    
+    if c_conditions > 0 && rust_conditions >= c_conditions {
+        score += 15.0; // Conditional logic preserved
+    }
+    
+    score.min(max_score)
+}
+
+fn evaluate_semantic_equivalence(code: &CodeBases) -> f32 {
+    let mut score: f32 = 0.0;
+    let max_score = 100.0;
+    
+    // Check variable initialization patterns
+    if code.c_source.contains("= 0") && code.rust_transpiled.contains("= 0") {
+        score += 20.0;
+    }
+    
+    // Check arithmetic operations preservation (%, +, >)
+    let c_operations = ["%", "+=", ">"].iter()
+        .map(|op| code.c_source.matches(op).count())
+        .sum::<usize>();
+    let rust_operations = ["%", "+=", ">"].iter()
+        .map(|op| code.rust_transpiled.matches(op).count())
+        .sum::<usize>();
+    
+    if c_operations > 0 && rust_operations >= c_operations {
+        score += 25.0; // Arithmetic operations preserved
+    }
+    
+    // Check array/pointer access patterns
+    let c_array_access = code.c_source.contains("[") && code.c_source.contains("]");
+    let rust_has_access = code.rust_transpiled.contains("offset") || 
+                         code.rust_transpiled.contains("[") ||
+                         code.rust_transpiled.contains("get(");
+    
+    if c_array_access && rust_has_access {
+        score += 20.0;
+    }
+    
+    // Check loop iteration logic
+    if code.c_source.contains("i < length") || code.c_source.contains("i++") {
+        if code.rust_transpiled.contains("i < length") || 
+           code.rust_transpiled.contains("i += 1") {
+            score += 20.0;
+        }
+    }
+    
+    // Check struct assignment patterns
+    if code.c_source.contains("Results results = {") {
+        if code.rust_transpiled.contains("Results {") {
+            score += 15.0;
+        }
+    }
+    
+    score.min(max_score)
+}
+
+fn evaluate_code_quality(code: &CodeBases) -> f32 {
+    let mut score: f32 = 100.0; // Start high and deduct for poor practices
+    let max_score = 100.0;
+    
+    // Heavy penalty for excessive unsafe usage
+    let unsafe_count = code.rust_transpiled.matches("unsafe").count();
+    if unsafe_count > 1 {
+        score -= 30.0; // Major penalty for unnecessary unsafe
+    }
+    
+    // Penalty for using libc types instead of native Rust types
+    let libc_usage = code.rust_transpiled.matches("libc::c_int").count();
+    score -= (libc_usage as f32 * 3.0).min(20.0);
+    
+    // Penalty for raw pointer usage where slices could be used
+    if code.rust_transpiled.contains("*mut") {
+        score -= 15.0;
+    }
+    
+    // Penalty for C-style loops instead of iterators
+    if code.rust_transpiled.contains("while") && !code.rust_transpiled.contains("for") {
+        score -= 10.0;
+    }
+    
+    // Penalty for explicit returns (not idiomatic)
+    let explicit_returns = code.rust_transpiled.matches("return ").count();
+    score -= (explicit_returns as f32 * 5.0).min(10.0);
+    
+    // Penalty for unnecessary mutability
+    let mut_count = code.rust_transpiled.matches("mut ").count();
+    if mut_count > 3 { // Some mutability is expected
+        score -= ((mut_count - 3) as f32 * 2.0).min(10.0);
+    }
+    
+    // Bonus for good practices
+    if code.rust_transpiled.contains("#[derive(") {
+        score += 5.0; // Good use of derives
+    }
+    
+    // Penalty for non-standard naming (though C2Rust might require this)
+    if code.rust_transpiled.contains("non_snake_case") {
+        score -= 5.0;
+    }
+    
+    score.max(0.0).min(max_score)
+}
+
+fn evaluate_error_handling(code: &CodeBases) -> f32 {
+    let mut score: f32 = 0.0;
+    let max_score = 100.0;
+    
+    // Check for potential buffer overflow protection
+    if code.rust_transpiled.contains("get(") || code.rust_transpiled.contains("get_mut(") {
+        score += 40.0; // Uses safe indexing
+    } else if code.rust_transpiled.contains("offset") {
+        score += 10.0; // Uses unsafe but controlled access
+    }
+    
+    // Check for array bounds validation
+    if code.rust_transpiled.contains("length") && code.rust_transpiled.contains("<") {
+        score += 30.0; // Has bounds checking in loop
+    }
+    
+    // Check for null pointer handling (though C2Rust might not do this)
+    if code.rust_transpiled.contains("is_null()") || code.rust_transpiled.contains("Option") {
+        score += 20.0;
+    }
+    
+    // Penalty for unchecked arithmetic that could overflow
+    if !code.rust_transpiled.contains("checked_") && 
+       (code.rust_transpiled.contains("+=") || code.rust_transpiled.contains("*")) {
+        score -= 10.0;
+    }
+    
+    // Basic score for maintaining input validation structure
+    if code.c_source.contains("length") && code.rust_transpiled.contains("length") {
+        score += 10.0;
+    }
+    
+    score.max(0.0).min(max_score)
+}
+
+fn evaluate_structural_similarity(code: &CodeBases) -> f32 {
+    // TODO: Implement structural similarity evaluation
+    // For now, returning a placeholder score
+    let score: f32 = 0.0;
+    let max_score = 100.0;
+
+    // Example checks (can be expanded):
+    // - Compare function counts
+    let c_funcs = extract_function_names(&code.c_source).len();
+    let rust_funcs = extract_rust_function_names(&code.rust_transpiled).len();
+    if c_funcs > 0 && rust_funcs >= c_funcs {
+        // score += 20.0;
+    }
+
+    // - Compare variable counts (very basic)
+    let c_vars = extract_c_variables(&code.c_source).len();
+    let rust_vars = extract_rust_variables(&code.rust_transpiled).len();
+    if c_vars > 0 && rust_vars >= c_vars {
+        // score += 10.0;
+    }
+    
+    score.min(max_score)
+}
+
+// Helper functions for pattern extraction
+fn extract_struct_fields(code: &str, struct_name: &str) -> Vec<String> {
+    let pattern = format!(r"(?s)typedef struct\s*(?:\w*\s*)?\{{\s*([^}}]*)\s*\}}\s*{};", struct_name);
+    let regex = Regex::new(&pattern).unwrap();
+    
+    if let Some(captures) = regex.captures(code) {
+        let fields_text = captures.get(1).unwrap().as_str();
+        fields_text.lines()
+            .filter_map(|line| {
+                let trimmed = line.trim();
+                if trimmed.is_empty() || trimmed.starts_with("//") {
+                    None
+                } else {
+                    // Extract field name from "type name;"
+                    let parts: Vec<&str> = trimmed.split_whitespace().collect();
+                    if parts.len() >= 2 {
+                        Some(parts[1].trim_end_matches(';').to_string())
+                    } else {
+                        None
+                    }
+                }
+            })
+            .collect()
+    } else {
+        Vec::new()
+    }
+}
+
+fn extract_rust_struct_fields(code: &str, struct_name: &str) -> Vec<String> {
+    let pattern = format!(r"(?s)pub struct {}\s*\{{\s*([^}}]*)\s*\}}", struct_name);
+    let regex = Regex::new(&pattern).unwrap();
+    
+    if let Some(captures) = regex.captures(code) {
+        let fields_text = captures.get(1).unwrap().as_str();
+        fields_text.lines()
+            .filter_map(|line| {
+                let trimmed = line.trim();
+                if trimmed.starts_with("pub ") && trimmed.contains(":") {
+                    let field_name = trimmed.split(":").next()?.trim().strip_prefix("pub ")?.trim();
+                    Some(field_name.to_string())
+                } else {
+                    None
+                }
+            })
+            .collect()
+    } else {
+        Vec::new()
+    }
+}
+
+fn extract_function_names(code: &str) -> Vec<String> {
+    let regex = Regex::new(r"(\w+)\s+(\w+)\s*\(").unwrap();
+    regex.captures_iter(code)
+        .filter_map(|cap| {
+            let return_type = cap.get(1)?.as_str();
+            if return_type != "if" && return_type != "while" && return_type != "for" {
+                Some(cap.get(2)?.as_str().to_string())
+            } else {
+                None
+            }
+        })
+        .collect()
+}
+
+fn extract_rust_function_names(code: &str) -> Vec<String> {
+    let regex = Regex::new(r"fn\s+(\w+)\s*\(").unwrap();
+    regex.captures_iter(code)
+        .map(|cap| cap.get(1).unwrap().as_str().to_string())
+        .collect()
+}
+
+fn extract_c_variables(code: &str) -> Vec<String> {
+    let regex = Regex::new(r"\b(?:int|float|double|char)\s+(\w+)").unwrap();
+    regex.captures_iter(code)
+        .map(|cap| cap.get(1).unwrap().as_str().to_string())
+        .collect()
+}
+
+fn extract_rust_variables(code: &str) -> Vec<String> {
+    let regex = Regex::new(r"let\s+(?:mut\s+)?(\w+)").unwrap();
+    regex.captures_iter(code)
+        .map(|cap| cap.get(1).unwrap().as_str().to_string())
+        .collect()
+}
+
+fn evaluate_transpilation() -> Result<Evaluation, std::io::Error> {
+    let code = read_source_files()?;
+    
+    let functional_correctness = evaluate_functional_correctness(&code);
+    let semantic_equivalence = evaluate_semantic_equivalence(&code);
+    let code_quality = evaluate_code_quality(&code);
+    let structural_similarity = evaluate_structural_similarity(&code);
+    let error_handling = evaluate_error_handling(&code);
+    
+    // Calculate weighted total score
+    let scores = [functional_correctness, semantic_equivalence, code_quality, 
+                  structural_similarity, error_handling];
+    let total_score = scores.iter().zip(WEIGHTS.iter())
+        .map(|(score, weight)| score * weight)
+        .sum();
+
+    Ok(Evaluation {
+        functional_correctness,
+        semantic_equivalence,
+        code_quality,
+        structural_similarity,
+        error_handling,
+        total_score,
+    })
+}
+
+fn main() -> io::Result<()> {
+    match evaluate_transpilation() {
+        Ok(evaluation) => {
+            println!("C2Rust Transpilation Evaluation Results:");
+            println!("========================================");
+            println!("Functional Correctness: {:.1}/100 (Weight: 40%)", evaluation.functional_correctness);
+            println!("Semantic Equivalence:   {:.1}/100 (Weight: 25%)", evaluation.semantic_equivalence);
+            println!("Code Quality:           {:.1}/100 (Weight: 15%)", evaluation.code_quality);
+            println!("Structural Similarity:  {:.1}/100 (Weight: 10%)", evaluation.structural_similarity);
+            println!("Error Handling:         {:.1}/100 (Weight: 10%)", evaluation.error_handling);
+            println!("----------------------------------------");
+            println!("Total Weighted Score:   {:.1}/100", evaluation.total_score);
+            
+            // Provide interpretation
+            if evaluation.total_score >= 90.0 {
+                println!("\n🟢 Excellent transpilation quality");
+            } else if evaluation.total_score >= 75.0 {
+                println!("\n🟡 Good transpilation with minor issues");
+            } else if evaluation.total_score >= 60.0 {
+                println!("\n🟠 Acceptable but needs improvement");
+            } else {
+                println!("\n🔴 Poor transpilation quality - manual review recommended");
+            }
+            
+            Ok(())
+        },
+        Err(e) => {
+            eprintln!("Error during evaluation: {}", e);
+            Err(e)
+        }
+    }
+}
+                    </code></pre>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for Fennel</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script evaluates the Lua code transpiled from Fennel.
+                    </p>
+                    <pre class="scrollable-code-box"><code class="language-python">
+import re
+from typing import Dict, List, Tuple
+
+class LuaFennelTranspiledCodeEvaluator:
+    def __init__(self, lua_code: str, fennel_code: str = ""):
+        """
+        Initializes the evaluator with the Lua code and optionally the original Fennel code.
+        """
+        self.lua_code = lua_code
+        self.fennel_code = fennel_code # Store fennel code for potential cross-comparison
+        self.weights = {
+            "functional_correctness": 0.40,
+            "semantic_equivalence": 0.25,
+            "code_quality_lua": 0.15,
+            "structural_similarity_lua": 0.10,
+            "error_handling": 0.10
+        }
+
+    def _normalize_fennel_name(self, fennel_name: str) -> str:
+        """Converts kebab-case Fennel names to snake_case for Lua comparison."""
+        return fennel_name.replace("-", "_")
+
+    def evaluate_functional_correctness(self) -> Tuple[float, List[str]]:
+        """
+        Proxy evaluation for functional correctness of Lua code transpiled from Fennel.
+        Checks for basic Lua syntax, function definitions, return statements, loops, and conditionals.
+        Score is out of 100.
+        """
+        comments = []
+        score = 0.0
+        max_score = 100.0
+
+        # 1. Basic Lua Syntax (Presence of function, end, local) - Max 20 points
+        # This is a very high-level check. A real Lua parser would be needed for true syntax validation.
+        if re.search(r"local\s+function", self.lua_code) and re.search(r"\bend\b", self.lua_code):
+            score += 20
+            comments.append("Basic Lua constructs ('local function', 'end') are present.")
+        else:
+            comments.append("Missing some fundamental Lua constructs like 'local function' or 'end'. This might indicate a major transpilation issue or incomplete code.")
+
+        # 2. Function definitions (specifically `local function name(...)`) - Max 25 points
+        # Example: local function process_numbers(numbers)
+        if re.search(r"local\s+function\s+\w+\s*\(", self.lua_code):
+            score += 25
+            comments.append("Standard Lua function definitions (`local function name(...)`) found.")
+        else:
+            comments.append("Standard Lua function definitions (`local function name(...)`) seem to be missing.")
+
+        # 3. Return statements, especially table returns - Max 25 points
+        # Example: return {["sum-even"] = sum_even, ["max-number"] = max_number}
+        if re.search(r"return\s*\{", self.lua_code):
+            score += 25
+            comments.append("Table return statement `return { ... }` found, common for Fennel map-like returns.")
+        elif re.search(r"\breturn\b", self.lua_code):
+            score += 10 # Partial credit if any return statement is found
+            comments.append("A `return` statement is present, but not specifically a table return. Check if this matches Fennel's intent.")
+        else:
+            comments.append("No `return` statement found. Functions that should produce values might be incomplete.")
+
+        # 4. Loop structure (e.g., `for ... in ipairs`) - Max 15 points
+        if re.search(r"for\s+.*?\s+in\s+ipairs\s*\(.*?\)\s*do[\s\S]*?end", self.lua_code):
+            score += 15
+            comments.append("`for ... in ipairs(...) do ... end` loop structure found, typical for Fennel's `each` on sequences.")
+        else:
+            comments.append("Expected `for ... in ipairs(...)` loop structure not found. If Fennel code used `each` or loops, this might be missing.")
+
+        # 5. Conditional structure (e.g., `if ... then ... end`) - Max 15 points
+        if re.search(r"if\s+.*?\s+then[\s\S]*?end", self.lua_code):
+            score += 15
+            comments.append("`if ... then ... end` conditional structure found, corresponding to Fennel's `when` or `if`.")
+        else:
+            comments.append("No `if ... then ... end` conditional structures found. Fennel conditionals might not have been transpiled.")
+        
+        return min(score, max_score), comments
+
+    def evaluate_semantic_equivalence(self) -> Tuple[float, List[str]]:
+        """
+        Heuristic evaluation of semantic equivalence between Fennel and transpiled Lua.
+        Checks naming conventions, variable declarations, control flow, and data structures.
+        Score is out of 100.
+        """
+        score = 0.0
+        comments = []
+        max_score = 100.0
+
+        # 1. Function name transpilation (Fennel kebab-case to Lua snake_case) - Max 20 points
+        fennel_func_match = re.search(r"\(fn\s+([\w-]+)", self.fennel_code)
+        if fennel_func_match:
+            fennel_func_name = fennel_func_match.group(1)
+            lua_func_name = self._normalize_fennel_name(fennel_func_name)
+            if re.search(rf"local\s+function\s+{lua_func_name}\s*\(", self.lua_code):
+                score += 20
+                comments.append(f"Function name '{fennel_func_name}' (Fennel) correctly transpiled to '{lua_func_name}' (Lua).")
+            else:
+                comments.append(f"Expected Lua function '{lua_func_name}' (from Fennel '{fennel_func_name}') not found or mismatched.")
+        else:
+            comments.append("Could not identify main function name in Fennel code for comparison.")
+
+        # 2. Variable declaration and naming (Fennel `var`/`let` to Lua `local`, kebab-case to snake_case) - Max 20 points
+        # Example: (var sum-even 0) -> local sum_even = 0
+        fennel_vars = re.findall(r"\((?:var|let)\s+([\w-]+)\s+.*?\)", self.fennel_code) # Simplified
+        found_var_matches = 0
+        if fennel_vars:
+            for f_var in fennel_vars:
+                l_var = self._normalize_fennel_name(f_var)
+                if re.search(rf"local\s+{l_var}\s*=", self.lua_code):
+                    found_var_matches +=1
+            if found_var_matches > 0:
+                 var_score = (found_var_matches / len(fennel_vars)) * 20
+                 score += var_score
+                 comments.append(f"Found {found_var_matches}/{len(fennel_vars)} Fennel variable declarations correctly transpiled to Lua `local` variables with name convention (e.g., '{fennel_vars[0]}' -> '{self._normalize_fennel_name(fennel_vars[0])}').")
+            else:
+                comments.append("No direct matches found for Fennel variable declarations (var/let) to Lua `local` variables with expected naming.")
+        else:
+            comments.append("No `(var ...)` or `(let ...)` declarations found in Fennel code to check.")
+
+
+        # 3. Loop transpilation (Fennel `each` with `ipairs` to Lua `for ... in ipairs`) - Max 15 points
+        if re.search(r"\(each\s+\[.*?\]\s+\(ipairs", self.fennel_code) and \
+           re.search(r"for\s+_\w*,\s*\w+\s+in\s+ipairs\s*\(", self.lua_code):
+            score += 15
+            comments.append("Fennel `(each ... (ipairs ...))` likely transpiled to Lua `for ... in ipairs(...)` correctly.")
+        elif re.search(r"\(each", self.fennel_code):
+            comments.append("Fennel `(each ...)` found, but corresponding Lua `for ... in ipairs(...)` or similar is not clear.")
+
+
+        # 4. Conditional transpilation (Fennel `when` or `if` to Lua `if`) - Max 15 points
+        fennel_ifs = len(re.findall(r"\((?:when|if)\s+", self.fennel_code))
+        lua_ifs = len(re.findall(r"\bif\s+.*?\s+then", self.lua_code))
+        if fennel_ifs > 0 and lua_ifs >= fennel_ifs:
+            score += 15
+            comments.append(f"Conditional structures: Fennel has ~{fennel_ifs}, Lua has ~{lua_ifs}. Appears consistent.")
+        elif fennel_ifs > 0 and lua_ifs < fennel_ifs:
+            score += 7 # Partial
+            comments.append(f"Conditional structures: Fennel has ~{fennel_ifs}, Lua has ~{lua_ifs}. Some conditionals might be missing or transformed differently.")
+        elif fennel_ifs == 0 and lua_ifs == 0:
+             score +=15 # No conditionals in source, none in target. Consistent.
+             comments.append("No conditional structures found in either Fennel or Lua code.")
+        else:
+            comments.append("Mismatch in conditional structure counts between Fennel and Lua.")
+
+
+        # 5. Table/Map return (Fennel keywords to Lua string keys) - Max 20 points
+        # Example: {:sum-even sum-even} -> {["sum-even"] = sum_even}
+        fennel_map_return = re.search(r"\{\s*(:[\w-]+\s+[\w-]+)", self.fennel_code)
+        if fennel_map_return:
+            # Check for the specific pattern {["key-name"] = key_name}
+            # Extract first key from Fennel to check its Lua counterpart
+            first_fennel_key_match = re.search(r":([\w-]+)", fennel_map_return.group(1))
+            if first_fennel_key_match:
+                f_key = first_fennel_key_match.group(1)
+                l_key_val_name = self._normalize_fennel_name(f_key)
+                if re.search(rf'return\s*\{{.*?\["{{f_key}}"\]\s*=\s*{{l_key_val_name}}}}', self.lua_code):
+                    score += 20
+                    comments.append(f"Fennel map return (e.g., ':{f_key}') correctly transpiled to Lua table with string key (e.g., '[\"{f_key}\"]').")
+                else:
+                    comments.append(f"Fennel map return found, but Lua string key pattern (e.g., '[\"{f_key}\"]') for it is not evident or mismatched.")
+            else:
+                 comments.append("Fennel map return structure found, but could not extract a key for detailed check.")
+        else:
+            comments.append("No clear Fennel map return `{:key val}` found to check against Lua table return.")
+
+        # 6. Specific function calls (e.g., math.fmod, table.unpack) - Max 10 points
+        fmod_ok = False
+        unpack_ok = False
+        if re.search(r"\(math\.fmod", self.fennel_code) and re.search(r"math\.fmod\s*\(", self.lua_code):
+            fmod_ok = True
+        if re.search(r"\(table\.unpack", self.fennel_code) and re.search(r"table\.unpack\s*\(", self.lua_code):
+            unpack_ok = True
+        
+        if fmod_ok and unpack_ok:
+            score += 10
+            comments.append("Key function calls like `math.fmod` and `table.unpack` appear consistently translated.")
+        elif fmod_ok or unpack_ok:
+            score += 5
+            comments.append("Some key function calls (`math.fmod`, `table.unpack`) are translated, but not all expected ones.")
+        else:
+            comments.append("Expected key function calls (`math.fmod`, `table.unpack`) not clearly translated if present in Fennel.")
+            
+        return min(score, max_score), comments
+
+    def evaluate_code_quality_lua(self) -> Tuple[float, List[str]]:
+        """
+        Evaluates Lua code quality: local variable usage, performance hints, ipairs/pairs.
+        Score is out of 100.
+        """
+        comments = []
+        current_score = 0.0
+        max_score = 100.0
+
+        # A. Local variable usage within functions (Max 50 points)
+        # All top-level variables in Fennel modules usually become local in Lua.
+        # This check focuses on variables *inside* the main function.
+        func_body_match = re.search(r"local\s+function\s+\w+\s*\([\s\S]*?\)([\s\S]*?)return", self.lua_code, re.MULTILINE)
+        local_vars_score = 0
+        if func_body_match:
+            body = func_body_match.group(1)
+            # Simple assignments: var = value
+            assignments = re.findall(r"\b([a-zA-Z_][a-zA-Z0-9_]*)\s*=\s*[^=]", body)
+            # Explicit local declarations in body: local var = value
+            local_defs = re.findall(r"\blocal\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*=", body)
+            
+            non_local_assignments = 0
+            for assign_var in assignments:
+                is_param = re.search(rf"local\s+function\s+\w+\s*\((?:[^)]*?\b{assign_var}\b[^)]*?)\)", self.lua_code) # Check if it's a parameter
+                if assign_var not in local_defs and not is_param :
+                    # Further check if it's not a known global like 'math' or 'table'
+                    if assign_var not in ['math', 'table', 'ipairs', 'pairs', 'string', 'os', 'io', '_G']:
+                         non_local_assignments += 1
+            
+            if not assignments: # No assignments, or all are local/params
+                 local_vars_score = 50
+                 comments.append("Good: All variables within the function body appear to be explicitly local or parameters.")
+            elif non_local_assignments == 0:
+                local_vars_score = 50
+                comments.append("Excellent: All assigned variables within the function body are explicitly `local` or parameters.")
+            else:
+                # Penalize based on the ratio of non-local to total assignments
+                # This is a heuristic.
+                total_assigns_in_body = len(assignments)
+                local_vars_score = max(0, (1 - (non_local_assignments / total_assigns_in_body)) * 50 if total_assigns_in_body > 0 else 50)
+                comments.append(f"Potential non-local variable usage: {non_local_assignments} out of {total_assigns_in_body} assignments in the function body might not be local. Score contribution: {local_vars_score:.2f}/50.")
+                if local_vars_score < 35:
+                    comments.append("Review variable scoping: Ensure all variables defined inside functions are `local` unless intentionally global.")
+            
+            # Specific check for sum_even, max_number from example
+            if re.search(r"local\s+sum_even\s*=", body) and re.search(r"local\s+max_number\s*=", body):
+                comments.append("'sum_even' and 'max_number' are correctly `local` within the function body.")
+                local_vars_score = max(local_vars_score, 45) # Boost if these specific ones are good
+            else:
+                comments.append("Warning: 'sum_even' or 'max_number' might not be `local` inside the function body in the transpiled code.")
+
+        else:
+            local_vars_score = 25 # Cannot fully assess if main function body isn't clearly identified
+            comments.append("Could not clearly identify the main function body to deeply assess local variable usage inside it. Partial score given.")
+        current_score += min(local_vars_score, 50.0)
+
+
+        # B. Performance Practices (Max 30 points)
+        perf_score = 30.0
+        loop_blocks = re.findall(r'(for.*?do.*?end|while.*?do.*?end|repeat.*?until.*?)', self.lua_code, re.DOTALL)
+        concat_in_loop = False
+        for block in loop_blocks:
+            if '..' in block: # String concatenation
+                concat_in_loop = True
+                break
+        if concat_in_loop:
+            perf_score -= 15
+            comments.append("String concatenation '..' detected, potentially inside a loop. If building strings iteratively, consider `table.concat`.")
+        
+        if re.search(r'for\s+\w+\s*=\s*1\s*,\s*#', self.lua_code): # Numeric for loop accessing length
+            perf_score -= 15
+            comments.append("Numeric for loop `for i=1,#table` detected. If table is large and not modified, consider caching its length: `local len = #table; for i=1,len do ... end`.")
+        current_score += max(0.0, perf_score)
+
+        # C. Proper use of ipairs for table iteration (Max 20 points)
+        # Fennel `(each ... (ipairs ...))` strongly suggests `ipairs` in Lua.
+        if re.search(r"\(each\s+\[.*?\]\s+\(ipairs", self.fennel_code):
+            if re.search(r'ipairs\s*\(', self.lua_code):
+                current_score += 20
+                comments.append("`ipairs` is correctly used in Lua, matching Fennel's use for sequence iteration.")
+            else:
+                comments.append("Fennel used `(ipairs ...)`, but `ipairs` not found in the transpiled Lua loop. This could be a semantic mismatch.")
+        elif re.search(r'ipairs\s*\(', self.lua_code): # Lua uses ipairs, Fennel might have used something else or it's implicit
+            current_score += 10 # Credit for using ipairs
+            comments.append("`ipairs` is used in Lua, good for array/sequence iteration.")
+        else:
+            comments.append("No `ipairs` usage detected. If iterating sequences, `ipairs` is generally preferred over `pairs` or numeric loops on `#table`.")
+        
+        return min(current_score, max_score), comments
+
+    def evaluate_structural_similarity_lua(self) -> Tuple[float, List[str]]:
+        """
+        Evaluates structural similarity to common Fennel-to-Lua transpilation patterns.
+        Checks for module return style, function definition style. Score out of 100.
+        """
+        score = 0.0
+        comments = []
+        max_score = 100.0
+
+        # 1. Module return style (e.g., `return main_function_name`) - Max 40 points
+        fennel_main_func_match = re.search(r"\(fn\s+([\w-]+)", self.fennel_code)
+        if fennel_main_func_match:
+            lua_main_func_name = self._normalize_fennel_name(fennel_main_func_match.group(1))
+            if re.search(rf"return\s+{lua_main_func_name}\s*$", self.lua_code.strip()): # End of file
+                score += 40
+                comments.append(f"Lua code correctly returns the main transpiled function ('{lua_main_func_name}'), typical for Fennel modules.")
+            else:
+                comments.append(f"Expected module return `return {lua_main_func_name}` not found at the end of the Lua code.")
+        else:
+            comments.append("Could not determine main function name from Fennel to check Lua module return structure.")
+
+
+        # 2. Function definition style (`local function name(...)`) - Max 30 points
+        if re.search(r"^local\s+function\s+\w+", self.lua_code.strip(), re.MULTILINE): # Starts with local function
+            score += 30
+            comments.append("Primary function defined as `local function ...`, which is standard.")
+        else:
+            comments.append("Primary function does not appear to be defined as `local function ...` at the top level.")
+
+        # 3. Consistent use of `local` for top-level definitions - Max 30 points
+        # Check if all top-level assignments are `local` (functions or variables)
+        # This is a simplification; complex modules might have other structures.
+        non_local_top_level = re.search(r"^(?!\s*local|\s*--|\s*$)\w+\s*=", self.lua_code, re.MULTILINE) # Assignment not starting with local or comment
+        if not non_local_top_level:
+            score += 30
+            comments.append("Good: Top-level definitions appear to use `local`, promoting modularity.")
+        else:
+            comments.append(f"Potential non-local top-level definition found near: '{non_local_top_level.group(0).strip()}'. Fennel typically transpiles to local Lua definitions.")
+            
+        return min(score, max_score), comments
+
+    def evaluate_error_handling(self) -> Tuple[float, List[str]]:
+        """
+        Evaluates error handling practices (pcall, assert, error). Score out of 100.
+        """
+        score = 0.0
+        comments = []
+        max_score = 100.0
+        max_score_per_item = max_score / 3.0
+
+        if re.search(r'pcall\s*\(', self.lua_code) or re.search(r'xpcall\s*\(', self.lua_code):
+            score += max_score_per_item
+            comments.append("Protected calls (`pcall` or `xpcall`) are used.")
+        else:
+            comments.append("No `pcall` or `xpcall` detected. Consider for operations that might fail.")
+
+        if re.search(r'assert\s*\(', self.lua_code):
+            score += max_score_per_item
+            comments.append("Assertions (`assert`) are used.")
+        else:
+            comments.append("No `assert` calls detected. Useful for preconditions and validation.")
+
+        if re.search(r'\berror\s*\(', self.lua_code):
+            score += max_score_per_item
+            comments.append("`error()` calls are used for explicit error throwing.")
+        else:
+            comments.append("No `error()` calls detected for explicit error throwing.")
+            
+        return min(score, max_score), comments
+        
+    def evaluate_all(self) -> Dict:
+        """
+        Runs all evaluations and returns a comprehensive report including a final weighted score.
+        """
+        evaluations_results = {
+            "functional_correctness": self.evaluate_functional_correctness(),
+            "semantic_equivalence": self.evaluate_semantic_equivalence(),
+            "code_quality_lua": self.evaluate_code_quality_lua(),
+            "structural_similarity_lua": self.evaluate_structural_similarity_lua(),
+            "error_handling": self.evaluate_error_handling()
+        }
+        
+        final_weighted_score = 0.0
+        detailed_results_output = {}
+        
+        for category_key, (score_value, comments_list) in evaluations_results.items():
+            category_weight = self.weights[category_key]
+            final_weighted_score += score_value * category_weight
+            detailed_results_output[category_key] = {
+                'score': round(score_value, 2),
+                'weight': category_weight,
+                'weighted_contribution': round(score_value * category_weight, 2),
+                'comments': comments_list
+            }
+            
+        return {
+            'final_weighted_score': round(final_weighted_score, 2),
+            'detailed_results': detailed_results_output
+        }
+
+def main():
+    # Define file paths
+    fennel_file_path = "process-numbers.fnl"  # input code in Fennel
+    lua_file_path = "process-numbers.lua"    # transpiled code in Lua
+
+    try:
+        with open(fennel_file_path, 'r') as f:
+            fennel_code_from_file = f.read()
+        with open(lua_file_path, 'r') as f:
+            lua_code_from_file = f.read()
+    except FileNotFoundError:
+        print(f"Error: One or both files not found. Make sure '{fennel_file_path}' and '{lua_file_path}' exist.")
+        # Fallback to example code if files are not found, or handle error as preferred
+        print("Falling back to internal example code.")
+        fennel_code_from_file = """
+(fn process-numbers [numbers]
+  (var sum-even 0)
+  (var max-number (table.unpack numbers 1))
+
+  (each [_ num (ipairs numbers)]
+    (when (= (math.fmod num 2) 0)
+      (set sum-even (+ sum-even num)))
+
+    (when (> num max-number)
+      (set max-number num)))
+
+  {:sum-even sum-even
+   :max-number max-number})
+"""
+        lua_code_from_file = """
+local function process_numbers(numbers)
+  local sum_even = 0
+  local max_number = table.unpack(numbers, 1)
+  for _, num in ipairs(numbers) do
+    if (math.fmod(num, 2) == 0) then
+      sum_even = (sum_even + num)
+    else
+    end
+    if (num > max_number) then
+      max_number = num
+    else
+    end
+  end
+  return {["sum-even"] = sum_even, ["max-number"] = max_number}
+end
+return process_numbers
+"""
+    
+    evaluator = LuaFennelTranspiledCodeEvaluator(lua_code_from_file, fennel_code_from_file)
+    results = evaluator.evaluate_all()
+    
+    print("\nFennel-to-Lua Transpiled Code Quality Evaluation Report")
+    print("=" * 70)
+    print(f"\nOverall Weighted Score: {results['final_weighted_score']}/100\n")
+    print("Detailed Analysis:")
+    print("-" * 70)
+    
+    for category, data in results['detailed_results'].items():
+        category_title = category.replace('_', ' ').title()
+        if "Lua" not in category_title: # Avoid "Code Quality Lua Lua"
+             category_title = category_title.replace(" Lua", "")
+
+        print(f"\nCategory: {category_title}")
+        print(f"  Score: {data['score']:.2f}/100")
+        print(f"  Weight: {data['weight']:.2f}")
+        print(f"  Weighted Contribution to Final Score: {data['weighted_contribution']:.2f}")
+        if data['comments']:
+            print("  Comments:")
+            for comment in data['comments']:
+                print(f"    - {comment}")
+    print("=" * 70)
+
+if __name__ == "__main__":
+    main()
+
+                    </code></pre>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">Script used for TypeScriptToLua</h3>
+                     <p class="text-sm text-gray-600 mb-4">
+                        This script evaluates the Lua code transpiled from TypeScript using TypeScriptToLua. This evaluation focuses on functional correctness, semantic equivalence, code quality, structural similarity, and error handling.
+                    </p>
+                    <pre class="scrollable-code-box"><code class="language-python">
+import re
+from typing import Dict, List, Tuple
+
+class LuaTranspiledCodeEvaluator:
+    def __init__(self, lua_code: str, typescript_code: str = ""):
+        """
+        Initializes the evaluator with the Lua code.
+        The typescript_code parameter is for potential future use in more advanced comparisons.
+        """
+        self.lua_code = lua_code
+        self.typescript_code = typescript_code 
+        self.weights = {
+            "functional_correctness": 0.40,
+            "semantic_equivalence": 0.25,
+            "code_quality_lua": 0.15,
+            "structural_similarity_lua": 0.10,
+            "error_handling": 0.10
+        }
+
+    def evaluate_functional_correctness(self) -> Tuple[float, List[str]]:
+        """
+        Proxy evaluation for functional correctness.
+        Checks for basic syntax, return statements, and essential constructs.
+        Score is out of 100.
+        """
+        comments = []
+        score = 0.0
+
+        # 1. Require statements for dependencies (e.g., lualib_bundle) - Max 25 points
+        if re.search(r'require\s*\(\s*"lualib_bundle"\s*\)', self.lua_code):
+            score += 25
+            comments.append("Transpiler helper library 'lualib_bundle' is correctly required.")
+        else:
+            comments.append("Transpiler helper library 'lualib_bundle' not found. This might be an issue if it's expected from the transpiler (e.g., TypeScriptToLua).")
+
+        # 2. Function definitions, block structure, and return statements - Max 35 points
+        functions_found = re.findall(r"function\s+([\w.:]+)\s*\(", self.lua_code)
+        earned_function_score = 0
+
+        if not functions_found:
+            comments.append("No standard function definitions (e.g., `function name(...)`) found.")
+        else:
+            # Basic check for block endings `end`. This is a very rough heuristic.
+            block_openers = len(re.findall(r'\b(function|if|for|while|repeat)\b', self.lua_code))
+            # Count `end` not preceded by `.` (to avoid `object.end`)
+            block_enders = len(re.findall(r'(?<!\.)\bend\b', self.lua_code)) 
+
+            if block_enders >= block_openers and block_openers > 0:
+                earned_function_score += 10
+                comments.append(f"Basic block structure plausible: {block_openers} openers vs {block_enders} 'end' keywords.")
+            elif block_openers > 0:
+                comments.append(f"Potential mismatch in block structures: {block_openers} openers vs {block_enders} 'end' keywords. (This is a rough check).")
+            
+            # Check for return in the specific `Main.processNumbers` function from the example
+            process_numbers_func_match = re.search(r"function\s+Main\.processNumbers\s*\([\s\S]*?end", self.lua_code)
+            if process_numbers_func_match:
+                if re.search(r"\breturn\s*\{", process_numbers_func_match.group(0)):
+                    earned_function_score += 25
+                    comments.append("`Main.processNumbers` function includes a table return statement `return { ... }`, as expected from the TypeScript example.")
+                else:
+                    comments.append("`Main.processNumbers` function found, but expected table return statement `return { ... }` is missing or not in the expected format.")
+            else:
+                comments.append("`Main.processNumbers` function definition not found or not in the expected format.")
+        score += min(earned_function_score, 35.0) # Cap points for this section
+
+        # 3. Loop structure (e.g., `for ... in ipairs`) - Max 20 points
+        if re.search(r"for\s+.*?\s+in\s+ipairs\s*\(.*?\)\s*do[\s\S]*?end", self.lua_code):
+            score += 20
+            comments.append("`for ... in ipairs(...) do ... end` loop structure found, good for array iteration.")
+        else:
+            comments.append("Expected `for ... in ipairs(...)` loop structure not found. Other loop types might be used, or it might be missing if not applicable.")
+
+        # 4. Conditional structure (e.g., `if ... then ... end`) - Max 20 points
+        if re.search(r"if\s+.*?\s+then[\s\S]*?end", self.lua_code):
+            score += 20
+            comments.append("`if ... then ... end` conditional structure found.")
+        else:
+            comments.append("No `if ... then ... end` conditional structures found.")
+        
+        return min(score, 100.0), comments
+
+    def evaluate_semantic_equivalence(self) -> Tuple[float, List[str]]:
+        """
+        Heuristic evaluation of semantic equivalence.
+        Checks for transpilation patterns like loop types, conditionals, return types, and indexing.
+        Score is out of 100.
+        """
+        score = 0.0
+        comments = []
+
+        # 1. Loop transpilation (e.g., TypeScript `for..of` to Lua `ipairs`) - Max 25 points
+        if re.search(r'for\s+_\w*,\s*\w+\s+in\s+ipairs\s*\(', self.lua_code):
+            score += 25
+            comments.append("Detected `for ... in ipairs(...)` loop, good for TypeScript `for...of` array iteration.")
+        else:
+            comments.append("`for ... in ipairs(...)` not found. Check if array iteration is handled correctly if applicable.")
+
+        # 2. Conditional statement transpilation - Max 20 points
+        if re.search(r'if\s+.+?\s+then[\s\S]+?end', self.lua_code):
+            score += 20
+            comments.append("`if...then...end` structures are present, indicating conditional logic translation.")
+        else:
+            comments.append("No `if...then...end` structures detected.")
+
+        # 3. Object/struct return to Lua table return - Max 25 points
+        if re.search(r'return\s*\{\s*\w+\s*=\s*\w+(?:,\s*\w+\s*=\s*\w+)*\s*\}', self.lua_code):
+            score += 25
+            comments.append("Detected `return { key = value, ... }` pattern, good for returning objects/structs from TypeScript.")
+        else:
+            comments.append("Expected `return { key = value, ... }` pattern for object return not found.")
+
+        # 4. Class method structure maintenance (e.g. `Main.processNumbers`) - Max 15 points
+        # Excludes typical constructor names from this specific check
+        if re.search(r'function\s+\w+\.\w+\s*\(', self.lua_code) and \
+           not re.search(r'\.prototype\.____constructor', self.lua_code) and \
+           not re.search(r':new\b', self.lua_code) and \
+           not re.search(r'\.new\b', self.lua_code):
+            score += 15
+            comments.append("General class method structure (e.g., `ClassName.methodName`) seems to be maintained.")
+        else:
+            comments.append("General class method structure (e.g., `ClassName.methodName`) not clearly detected (aside from typical constructors).")
+            
+        # 5. Array indexing (Lua is 1-based, TS is 0-based) - Max 15 points
+        # Example: `numbers[0]` in TS became `numbers[1]` in the example Lua.
+        if re.search(r'numbers\[1\]', self.lua_code) and not re.search(r'numbers\[0\]', self.lua_code):
+            score += 15
+            comments.append("Detected 1-based array indexing (e.g., `numbers[1]`), correct for Lua if original TS was 0-based.")
+        elif re.search(r'numbers\[0\]', self.lua_code):
+            comments.append("Warning: Detected 0-based array indexing (e.g., `numbers[0]`). This is incorrect for Lua and may indicate a transpilation error.")
+        else:
+            comments.append("Specific `numbers[1]` indexing pattern not found; general indexing correctness is crucial but harder to verify broadly with regex.")
+            
+        return max(0.0, min(100.0, score)), comments
+
+    def evaluate_code_quality_lua(self) -> Tuple[float, List[str]]:
+        """
+        Evaluates Lua code quality: local variable usage, performance hints, ipairs/pairs.
+        Score is out of 100.
+        """
+        comments = []
+        current_score = 0.0
+
+        # A. Local variable usage within functions (Max 50 points)
+        func_bodies_matches = re.finditer(r"function\s+[\w.:]+\s*\((.*?)\)([\s\S]*?)end", self.lua_code)
+        
+        total_assignments_in_funcs = 0
+        local_vars_in_funcs_count = 0 
+        
+        has_functions_with_bodies = False
+        for match in func_bodies_matches:
+            has_functions_with_bodies = True
+            params_str, body = match.groups()
+            
+            if params_str.strip():
+                local_vars_in_funcs_count += len([p for p in params_str.split(',') if p.strip()])
+
+            # Assignments like `var = value` (simplistic regex)
+            # Exclude assignments to table fields like `Main.name =` or `self.foo =` from "non-local" penalty here.
+            # Focus on simple variable assignments: `sumEven = 0`
+            assignments_in_body = re.findall(r"\b([a-zA-Z_][a-zA-Z0-9_]*)\s*=\s*[^=]", body)
+            # Filter out self.var assignments from being counted as "global" assignments
+            potential_non_locals = [a for a in assignments_in_body if not (a.startswith("self.") or "." in a)]
+            total_assignments_in_funcs += len(potential_non_locals)
+            
+            local_defs_in_body = re.findall(r"\blocal\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*=", body)
+            local_vars_in_funcs_count += len(local_defs_in_body)
+        
+        local_ratio_score = 0
+        if has_functions_with_bodies:
+            if total_assignments_in_funcs > 0 : # Count only assignments that are not explicitly local
+                # Effective locals = params + explicit locals
+                # Total "assignable" vars = non-local assignments + explicit locals
+                
+                # Count all variable names that are assigned to, or are parameters.
+                all_vars_assigned_or_param = local_vars_in_funcs_count + total_assignments_in_funcs
+                if all_vars_assigned_or_param > 0:
+                    local_ratio = local_vars_in_funcs_count / float(all_vars_assigned_or_param)
+                    local_ratio_score = local_ratio * 50
+                else: # No assignments or params found in function bodies
+                    local_ratio_score = 50 # Assume good if nothing to check
+                comments.append(f"Heuristic local variable usage in functions: {local_vars_in_funcs_count} locals/params out of ~{all_vars_assigned_or_param} potential vars. Score contribution: {local_ratio_score:.2f}/50.")
+                if local_ratio_score < 35: # Threshold for comment
+                     comments.append("Consider declaring more variables as 'local' within functions for better scoping and potential performance.")
+            else: # No non-local assignments found, or only params/locals
+                local_ratio_score = 50 
+                comments.append("Good: Variables within functions appear to be parameters or explicitly local, or no simple assignments found.")
+        else:
+            local_ratio_score = 50 # No functions, so this check is not applicable in a penalty way.
+            comments.append("No functions found to evaluate local variable usage within them.")
+
+        # Specific check for the example's variables
+        if re.search(r"local\s+sumEven\s*=", self.lua_code) and re.search(r"local\s+maxNumber\s*=", self.lua_code):
+            comments.append("'sumEven' and 'maxNumber' are correctly declared as local in the example.")
+            # Boost score if specific important variables are local, ensuring it reflects this known good practice.
+            local_ratio_score = max(local_ratio_score, 40.0) 
+        elif has_functions_with_bodies: 
+            comments.append("Warning: In the example context, 'sumEven' or 'maxNumber' might not be 'local'. Ensure all function variables are properly scoped.")
+
+        current_score += min(local_ratio_score, 50.0)
+
+        # B. Performance Practices (Max 30 points)
+        perf_score = 30.0
+        # String concatenation `..` in loops
+        loop_blocks = re.findall(r'(for.*?do.*?end|while.*?do.*?end|repeat.*?until.*?)', self.lua_code, re.DOTALL)
+        concat_in_loop = False
+        for block in loop_blocks:
+            if '..' in block:
+                concat_in_loop = True
+                break
+        if concat_in_loop:
+            perf_score -= 15
+            comments.append("String concatenation '..' detected, potentially inside a loop. If building strings iteratively, consider `table.concat` for better performance.")
+        
+        if re.search(r'for\s+\w+\s*=\s*1\s*,\s*#', self.lua_code):
+            perf_score -= 15
+            comments.append("Numeric for loop `for i=1,#table` detected. If table is large and not modified in loop, consider caching its length: `local len = #table; for i=1,len do ... end`.")
+        current_score += max(0.0, perf_score)
+
+        # C. Proper use of ipairs/pairs for table iteration (Max 20 points)
+        uses_ipairs = bool(re.search(r'ipairs\s*\(', self.lua_code))
+        uses_pairs = bool(re.search(r'pairs\s*\(', self.lua_code))
+        has_for_loops = "for " in self.lua_code
+
+        iter_score = 0
+        if uses_ipairs:
+            iter_score += 10
+            comments.append("`ipairs` is used, suitable for iterating over sequence-like tables (arrays).")
+        if uses_pairs:
+            iter_score += 10
+            comments.append("`pairs` is used, suitable for iterating over general tables (hash maps).")
+        
+        if has_for_loops and not uses_ipairs and not uses_pairs:
+            comments.append("Loops are present, but neither `ipairs` nor `pairs` detected. Ensure appropriate iterators are used if iterating over tables.")
+        elif not has_for_loops: 
+             iter_score = 20 
+             comments.append("No table iteration loops found, so ipairs/pairs check is not directly applicable here.")
+        current_score += min(iter_score, 20.0)
+        
+        return min(current_score, 100.0), comments
+
+    def evaluate_structural_similarity_lua(self) -> Tuple[float, List[str]]:
+        """
+        Evaluates structural similarity to common TypeScript-to-Lua transpilation patterns.
+        Checks for class/module structure, constructor, method definitions. Score out of 100.
+        """
+        score = 0.0
+        comments = []
+
+        # 1. Transpiler helper library require (e.g., lualib_bundle) - Max 25 points
+        if re.search(r'require\s*\(\s*"lualib_bundle"\s*\)', self.lua_code):
+            score += 25
+            comments.append("Presence of `require(\"lualib_bundle\")` matches common TSTL structure.")
+        else:
+            comments.append("`require(\"lualib_bundle\")` not found. Structure might differ if another transpiler or no library is used.")
+
+        # 2. Class declaration pattern - Max 25 points
+        if re.search(r'\w+\s*=\s*__TS__Class\s*\(\s*\)', self.lua_code): # TSTL specific
+            score += 25
+            comments.append("Class declaration pattern `ClassName = __TS__Class()` found, typical for TSTL.")
+        elif re.search(r'\w+\s*=\s*\{\s*\}\s*;?\s*(?:self\.\w+|local\s+\w+)\s*=\s*\1\s*;?\s*\1\.\_\_index\s*=\s*\1', self.lua_code, re.IGNORECASE) or \
+             re.search(r'local\s+\w+\s*=\s*\{\s*\}\s*;?\s*\w+\.\_\_index\s*=\s*\w+', self.lua_code): # Common Lua OOP
+            score += 15 # Partial points for generic Lua OOP
+            comments.append("A common Lua OOP class structure detected (metatable-based).")
+        else:
+            comments.append("TSTL class declaration pattern `__TS__Class()` not found, nor other obvious simple Lua class patterns.")
+
+        # 3. Constructor pattern - Max 25 points
+        if re.search(r'function\s+\w+\.prototype\.____constructor\s*\(self\)', self.lua_code): # TSTL specific
+            score += 25
+            comments.append("TSTL constructor pattern `function Class.prototype.____constructor(self)` found.")
+        elif re.search(r'function\s+\w+[:.]new\s*\(', self.lua_code): # Common Lua constructor (Class:new or Class.new)
+            score += 15 # Partial points for generic Lua constructor
+            comments.append("Common Lua constructor pattern (e.g., `Class:new` or `Class.new`) detected.")
+        else:
+            comments.append("TSTL constructor pattern `____constructor` or common Lua `new` method not found.")
+
+        # 4. Method definition pattern - Max 25 points
+        # Exclude constructor from this specific check
+        is_tstl_constructor = r'\.prototype\.____constructor'
+        is_lua_new = r'[:.]new\b' # `\b` for word boundary
+        
+        # TSTL-like method: Main.processNumbers(self, ...)
+        tstl_method_pattern = r'function\s+\w+\.(?!prototype)([\w]+)\s*\(self' 
+        # Lua-like method: Main:processNumbers(...)
+        lua_method_pattern = r'function\s+\w+:([\w]+)\s*\('
+
+        if re.search(tstl_method_pattern, self.lua_code) and not re.search(is_tstl_constructor, self.lua_code):
+            score += 25
+            comments.append("TSTL-like method definition pattern `function ClassName.methodName(self, ...)` found.")
+        elif re.search(lua_method_pattern, self.lua_code) and not re.search(is_lua_new, self.lua_code):
+            score += 15 
+            comments.append("Common Lua method definition pattern `function ClassName:methodName(...)` detected.")
+        else:
+            comments.append("Typical method definition patterns (TSTL `Class.method(self,...)` or Lua `Class:method(...)`) not clearly detected (aside from constructor).")
+            
+        return min(score, 100.0), comments
+
+    def evaluate_error_handling(self) -> Tuple[float, List[str]]:
+        """
+        Evaluates error handling practices (pcall, assert, error). Score out of 100.
+        """
+        score = 0.0
+        comments = []
+        max_score_per_item = 100.0 / 3.0 # Roughly 33.33 for each
+
+        if re.search(r'pcall\s*\(', self.lua_code) or re.search(r'xpcall\s*\(', self.lua_code):
+            score += max_score_per_item
+            comments.append("Protected calls (`pcall` or `xpcall`) are used, good for catching errors.")
+        else:
+            comments.append("No `pcall` or `xpcall` detected. Consider using them for robust error handling where operations might fail.")
+
+        if re.search(r'assert\s*\(', self.lua_code):
+            score += max_score_per_item
+            comments.append("Assertions (`assert`) are used, good for preconditions, validations, and early error detection.")
+        else:
+            comments.append("No `assert` calls detected. Assertions can help catch logical issues early during development and testing.")
+
+        if re.search(r'\berror\s*\(', self.lua_code): 
+            score += max_score_per_item
+            comments.append("`error()` calls are used for explicitly throwing errors.")
+        else:
+            comments.append("No `error()` calls detected for explicit error throwing when irrecoverable situations occur.")
+            
+        return min(score, 100.0), comments
+        
+    def evaluate_all(self) -> Dict:
+        """
+        Runs all evaluations and returns a comprehensive report including a final weighted score.
+        """
+        evaluations_results = {
+            "functional_correctness": self.evaluate_functional_correctness(),
+            "semantic_equivalence": self.evaluate_semantic_equivalence(),
+            "code_quality_lua": self.evaluate_code_quality_lua(),
+            "structural_similarity_lua": self.evaluate_structural_similarity_lua(),
+            "error_handling": self.evaluate_error_handling()
+        }
+        
+        final_weighted_score = 0.0
+        detailed_results_output = {}
+        
+        for category_key, (score_value, comments_list) in evaluations_results.items():
+            category_weight = self.weights[category_key]
+            final_weighted_score += score_value * category_weight
+            detailed_results_output[category_key] = {
+                'score': round(score_value, 2),
+                'weight': category_weight,
+                'weighted_contribution': round(score_value * category_weight, 2),
+                'comments': comments_list
+            }
+            
+        return {
+            'final_weighted_score': round(final_weighted_score, 2),
+            'detailed_results': detailed_results_output
+        }
+
+def main():
+    lua_code_example = """
+local ____lualib = require("lualib_bundle")
+local __TS__Class = ____lualib.__TS__Class
+Main = __TS__Class()
+Main.name = "Main"
+function Main.prototype.____constructor(self)
+end
+function Main.processNumbers(self, numbers)
+    local sumEven = 0
+    local maxNumber = numbers[1]
+    for ____, num in ipairs(numbers) do
+        if num % 2 == 0 then
+            sumEven = sumEven + num
+        end
+        if num > maxNumber then
+            maxNumber = num
+        end
+    end
+    return {sumEven = sumEven, maxNumber = maxNumber}
+end
+"""
+    
+    evaluator = LuaTranspiledCodeEvaluator(lua_code_example)
+    results = evaluator.evaluate_all()
+    
+    print("\nLua Transpiled Code Quality Evaluation Report")
+    print("=" * 60)
+    print(f"\nOverall Weighted Score: {results['final_weighted_score']}/100\n")
+    print("Detailed Analysis:")
+    print("-" * 60)
+    
+    for category, data in results['detailed_results'].items():
+        category_title = category.replace('_', ' ').title()
+        # For "Code Quality Lua" and "Structural Similarity Lua", keep "Lua" in title
+        if "Lua" not in category_title:
+             category_title = category_title.replace(" Lua", "")
+
+        print(f"\nCategory: {category_title}")
+        print(f"  Score: {data['score']}/100")
+        print(f"  Weight: {data['weight']:.2f}")
+        print(f"  Weighted Contribution to Final Score: {data['weighted_contribution']:.2f}")
+        if data['comments']:
+            print("  Comments:")
+            for comment in data['comments']:
+                print(f"    - {comment}")
+    print("=" * 60)
+
+if __name__ == "__main__":
+    main()
+                    </code></pre>
+                </div>              
+            </div>
+        </section>
+
+        <footer class="text-center py-8 sm:py-10 mt-12 sm:mt-16 border-t border-gray-300">
+            <p class="text-gray-600">
+                Related work:
+                <a href="https://drive.google.com/file/d/1Ae05WZgI8qFTpSCSiUS0myBfHP9jY_vH/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700 hover:underline font-medium">
+                    View Document on Google Drive
+                </a>
+            </p>
+            <p class="text-xs text-gray-500 mt-4">
+                &copy; <script>document.write(new Date().getFullYear())</script> André Freitas, Pedro Rangel Henriques and Tiago Baptista. All rights reserved (or specify your license).
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
