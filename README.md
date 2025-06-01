@@ -1,6 +1,7 @@
 # Comparative-Review-and-Empirical-Evaluation-about-transpilers
 This folder contains an article called "Bridging Language Barriers: A Comparative Review and Empirical Evaluation of Source-to-Source Transpilers" that performs a state of the art study about transpilers as well as an independent research made, that focuses on comparing the performance and results of multiple popular tools involving transpilation.
+
 With this paper, there is also a complementary web page with useful information that allows the reader to gather more information and replicate the same experiment made.
 
-Article Abstract:
+**Article Abstract:**
 Source-to-source transpilation plays a pivotal role in modern software engineering by enabling code migration, feature adoption, and cross-language interoperability without sacrificing semantic integrity. The contributions discussed in this paper can be split into two. The first is a comprehensive literature review that aims at defining what transpilers are, traces their historical evolution from early Fortran/COBOL preprocessors to more recent tools like Babel and TypeScript, and examines key parsing methodologies, AST representations, and transformation strategies. The second is an experimental investigation which assesses several popular transpilers—selected by GitHub popularity and unique language-pair capabilities, when applied to an equivalent code snippet designed to sum even numbers and identify the maximum element. The metrics evaluated were the execution time, CPU, memory consumption, output accuracy and usability
