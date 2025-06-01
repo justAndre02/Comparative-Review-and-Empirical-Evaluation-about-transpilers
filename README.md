@@ -1,0 +1,2 @@
+# Comparative-Review-and-Empirical-Evaluation-about-transpilers
+This folder contains an article called "Bridging Language Barriers: A Comparative Review and Empirical Evaluation of Source-to-Source Transpilers" that performs a state of the art study about transpilers as well as an independent research made, that focuses on comparing the performance and results of multiple popular tools involving transpilation.
